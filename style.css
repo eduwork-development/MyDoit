@@ -1180,7 +1180,7 @@ button {
     inset: 0;
     object-fit: contain;
     object-position: center;
-    height: 97%;
+    height: 100%;
     z-index: 0;
   }
   .hero__container {
