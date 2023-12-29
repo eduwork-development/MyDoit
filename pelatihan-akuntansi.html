@@ -78,24 +78,24 @@
                 <li>
                   <div
                     x-data="{
-                         open: false,
-                         toggle() {
-                               if (this.open) {
-                                  return this.close()
-                               }
-             
-                               this.$refs.button.focus()
-             
-                               this.open = true
-                         },
-                         close(focusAfter) {
-                               if (! this.open) return
-             
-                               this.open = false
-             
-                               focusAfter &amp;&amp; focusAfter.focus()
-                         }
-                      }"
+                       open: false,
+                       toggle() {
+                             if (this.open) {
+                                return this.close()
+                             }
+           
+                             this.$refs.button.focus()
+           
+                             this.open = true
+                       },
+                       close(focusAfter) {
+                             if (! this.open) return
+           
+                             this.open = false
+           
+                             focusAfter &amp;&amp; focusAfter.focus()
+                       }
+                    }"
                     x-on:keydown.escape.prevent.stop="close($refs.button)"
                     x-on:focusin.window="! $refs.panel.contains($event.target) &amp;&amp; close()"
                     x-id="['dropdown-button']"
@@ -125,9 +125,13 @@
                       class="relative lg:absolute left-0 mt-[25px] w-full lg:w-40 rounded-md bg-white shadow-none lg:shadow-s2"
                       id="dropdown-button-3"
                     >
-                      <a href="" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500">Akuntansi</a>
+                      <a href="/akuntansi.html" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
+                        >Akuntansi</a
+                      >
                       <a href="" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500">Perpajakan</a>
-                      <a href="" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500">Analisis Bisnis</a>
+                      <a href="/analisis-bisnis.html" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
+                        >Analisis Bisnis</a
+                      >
                       <a
                         href="/pelatihan-akuntansi.html"
                         class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
@@ -159,11 +163,14 @@
           <div class="mb-[20px] max-w-[1100px] m-auto rounded-[20px] md:bg-white">
             <div class="flex flex-row max-w-[1100px] px-4 py-5 mx-auto text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]">
               <div class="flex flex-col gap-[10px] w-[50%]">
-                <a href="">
+                <a href="/akuntansi.html">
                   <div class="flex flex-col hover:bg-slate-300 hover:text-white p-[14px] rounded-[15px] duration-300">
                     <p class="text-[18px] font-[600]">Akuntansi</p>
                     <p class="text-[15px]">Tim ahli kami memastikan laporan keuangan akurat dan sistematis, dilengkapi analisis bisnis untuk pengambilan keputusan.</p>
-                    <a href="" target="_blank" class="bg-white border border-[#00D27F] hover:bg-[#00D27F] hover:text-white mt-[10px] t text-[#00D27F] text-[14px] text-center md:px-[25px] md:py-[10px] rounded-[15px] duration-300"
+                    <a
+                      href="/akuntansi.html"
+                      target="_blank"
+                      class="bg-white border border-[#00D27F] hover:bg-[#00D27F] hover:text-white mt-[10px] t text-[#00D27F] text-[14px] text-center md:px-[25px] md:py-[10px] rounded-[15px] duration-300"
                       >Selengkapnya</a
                     >
                   </div>
@@ -179,16 +186,19 @@
                 </a>
               </div>
               <div class="flex flex-col gap-[10px] w-[50%]">
-                <a href="">
+                <a href="/analisis-bisnis.html">
                   <div class="flex flex-col hover:bg-slate-300 hover:text-white p-[14px] rounded-[15px] duration-300">
                     <p class="text-[18px] font-[600]">Analisis Bisnis</p>
                     <p class="text-[15px]">Analisa bisnis mendalam. Wujudkan langkah nyata untuk keuntungan maksimal, efisiensi optimal, dan peningkatan bisnis.</p>
-                    <a href="" target="_blank" class="bg-white border border-[#00D27F] hover:bg-[#00D27F] hover:text-white mt-[10px] t text-[#00D27F] text-[14px] text-center md:px-[25px] md:py-[10px] rounded-[15px] duration-300"
+                    <a
+                      href="/analisis-bisnis.html"
+                      target="_blank"
+                      class="bg-white border border-[#00D27F] hover:bg-[#00D27F] hover:text-white mt-[10px] t text-[#00D27F] text-[14px] text-center md:px-[25px] md:py-[10px] rounded-[15px] duration-300"
                       >Selengkapnya</a
                     >
                   </div>
                 </a>
-                <a href="">
+                <a href="/pelatihan-akuntansi.html">
                   <div class="flex flex-col hover:bg-slate-300 group-hover:text-white p-[14px] rounded-[15px] duration-300">
                     <p class="text-[18px] font-[600]">Pelatihan sistem akuntansi</p>
                     <p class="text-[15px]">Pelatihan sistem akuntansi untuk digitalisasi dan monitoring keuangan. Tingkatkan SDM dan pengelolaan keuangan.</p>
@@ -507,7 +517,7 @@
               <p class="text-center text-[20px] font-[600]">Ahli di Bidangnya</p>
               <p class="text-[#606060] text-justify text-[14px]">Tim kami terdiri dari para ahli yang berpengalaman dalam implementasi sistem akuntansi dan migrasi sistem keuangan.</p>
             </div>
-            <div class="mb-[15px]">
+            <div class="hidden mb-[15px]">
               <a href="" class="text-[#00D27F] font-[600] flex flex-row items-center gap-[10px]">
                 <p>Learn More</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
@@ -534,7 +544,7 @@
               <p class="text-center text-[20px] font-[600]">Kursus Disesuaikan</p>
               <p class="text-[#606060] text-justify text-[14px] mb-[20px]">Kursus kami disesuaikan dengan kebutuhan bisnismu, supaya kamu bisa fokus pada hal yang paling relevan.</p>
             </div>
-            <div class="mb-[15px]">
+            <div class="hidden mb-[15px]">
               <a href="" class="text-[#00D27F] font-[600] flex flex-row items-center gap-[10px]">
                 <p>Learn More</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
@@ -561,7 +571,7 @@
               <p class="text-center text-[20px] font-[600]">Dukungan Purna Jual</p>
               <p class="text-[#606060] text-justify text-[14px] mb-[20px]">Dukungan purna jual kami memastikan sistem akuntansimu tetap lancar pasca implementasi atau migrasi.</p>
             </div>
-            <div class="mb-[15px]">
+            <div class="hidden mb-[15px]">
               <a href="" class="text-[#00D27F] font-[600] flex flex-row items-center gap-[10px]">
                 <p>Learn More</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
