@@ -15,6 +15,7 @@ export default defineConfig({
         pelatihan_akuntansi: resolve(__dirname, "pelatihan-akuntansi.html"),
         analisis_bisnis: resolve(__dirname, "analisis-bisnis.html"),
         akuntansi: resolve(__dirname, "akuntansi.html"),
+        perpajakan: resolve(__dirname, "perpajakan.html"),
       },
     },
   },
