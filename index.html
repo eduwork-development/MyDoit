@@ -8,43 +8,87 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./output.css" />
     <!-- Swiper.js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- NavBar Start -->
     <div class="w-full z-[100] font-roboto">
       <nav class="fixed w-full z-[100] top-0 left-0 h-max">
         <div id="navbar" class="w-full bg-white z-[100]">
-          <div class="max-w-[1100px] flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse md:ml-[25px]">
-              <img src="./assets/logo/mydoit-corporate-logo.png" alt="logo mydoit corporate" class="navbar__logo" />
+          <div
+            class="max-w-[1100px] flex flex-wrap items-center justify-between mx-auto p-4"
+          >
+            <a
+              href="/index.html"
+              class="flex items-center space-x-3 rtl:space-x-reverse md:ml-[25px]"
+            >
+              <img
+                src="./assets/logo/mydoit-corporate-logo.png"
+                alt="logo mydoit corporate"
+                class="navbar__logo"
+              />
             </a>
 
             <div class="hidden md:flex flex-wrap items-center gap-[25px]">
               <div class="flex">
-                <a href="/index.html" class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]">Home </a>
+                <a
+                  href="/"
+                  class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]"
+                  >Home
+                </a>
               </div>
 
               <div class="flex">
-                <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" aria-expanded="false" class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]">
+                <button
+                  id="mega-menu-full-dropdown-button"
+                  data-collapse-toggle="mega-menu-full-dropdown"
+                  aria-expanded="false"
+                  class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]"
+                >
                   <div class="flex items-center">
                     <p>Services</p>
-                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
                     </svg>
                   </div>
                 </button>
               </div>
               <div class="flex">
-                <a href="" class="hidden py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]">Blog</a>
+                <a
+                  href=""
+                  class="hidden py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]"
+                  >Blog</a
+                >
               </div>
               <div class="flex">
-                <a href="" class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]">About Us</a>
+                <a
+                  href="./about-us.html"
+                  class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]"
+                  >About Us</a
+                >
               </div>
             </div>
             <div class="hidden md:flex flex-row justify-center items-center">
@@ -65,14 +109,32 @@
               aria-expanded="false"
             >
               <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
               </svg>
             </button>
             <div class="hidden w-full md:w-auto" id="navbar-default">
-              <ul class="flex flex-col p-4 md:p-0 mt-4 font-light border md:justify-between border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-light border md:justify-between border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
+              >
                 <li>
-                  <a href="/index.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 font-[300]">Home</a>
+                  <a
+                    href="/index.html"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 font-[300]"
+                    >Home</a
+                  >
                 </li>
 
                 <li>
@@ -111,8 +173,18 @@
                       aria-controls="dropdown-button-3"
                     >
                       Services
-                      <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                      <svg
+                        class="w-5 h-5 ml-1"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
                       </svg>
                     </button>
                     <div
@@ -125,13 +197,19 @@
                       class="relative lg:absolute left-0 mt-[25px] w-full lg:w-40 rounded-md bg-white shadow-none lg:shadow-s2"
                       id="dropdown-button-3"
                     >
-                      <a href="/akuntansi.html" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
+                      <a
+                        href="/akuntansi.html"
+                        class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
                         >Akuntansi</a
                       >
-                      <a href="/perpajakan.html" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
+                      <a
+                        href="/perpajakan.html"
+                        class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
                         >Perpajakan</a
                       >
-                      <a href="/analisis-bisnis.html" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
+                      <a
+                        href="/analisis-bisnis.html"
+                        class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
                         >Analisis Bisnis</a
                       >
                       <a
@@ -143,10 +221,18 @@
                   </div>
                 </li>
                 <li>
-                  <a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:p-0 font-[300]">Blog</a>
+                  <a
+                    href="/"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:p-0 font-[300]"
+                    >Blog</a
+                  >
                 </li>
                 <li>
-                  <a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:p-0 font-[300]">About Us</a>
+                  <a
+                    href="/"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:p-0 font-[300]"
+                    >About Us</a
+                  >
                 </li>
                 <li class="mt-[10px]">
                   <a
@@ -161,7 +247,7 @@
             </div>
           </div>
         </div>
-        <div id="mega-menu-full-dropdown" class="hidden h-screen p-[30px] mt-[0px] z-40" style="background: rgb(0, 0, 0); background: linear-gradient(34deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.72) 100%)">
+        <!-- <div id="mega-menu-full-dropdown" class="hidden h-screen p-[30px] mt-[0px] z-40" style="background: rgb(0, 0, 0); background: linear-gradient(34deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.72) 100%)">
           <div class="mb-[20px] max-w-[1100px] m-auto rounded-[20px] md:bg-white">
             <div class="flex flex-row max-w-[1100px] px-4 py-5 mx-auto text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]">
               <div class="flex flex-col gap-[10px] w-[50%]">
@@ -218,6 +304,104 @@
               </div>
             </div>
           </div>
+        </div> -->
+        <div
+          id="mega-menu-full-dropdown"
+          class="hidden h-screen p-[30px] mt-[0px] z-40"
+          style="
+            background: rgb(0, 0, 0);
+            background: linear-gradient(
+              34deg,
+              rgba(0, 0, 0, 0.72) 0%,
+              rgba(0, 0, 0, 0.72) 100%
+            );
+          "
+        >
+          <div
+            class="mb-[20px] max-w-[400px] m-auto rounded-[20px] md:bg-white px-4 py-5"
+          >
+            <a href="">
+              <div
+                class="flex flex-row items-center max-w-[400px] px-4 py-5 mx-auto rounded-[20px] hover:bg-slate-300 duration-200 text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]"
+              >
+                <div>
+                  <img
+                    src="assets/icon/akuntansi-dropdown.png"
+                    alt=""
+                    class="min-w-[50px] h-[50px]"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-[600] text-[18px]">Akuntansi</p>
+                  <p class="text-[14px]">
+                    Tim ahli kami memastikan laporan keuangan akurat dan
+                    sistematis
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex flex-row items-center max-w-[400px] px-4 py-5 mx-auto rounded-[20px] hover:bg-slate-300 duration-200 text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]"
+              >
+                <div>
+                  <img
+                    src="assets/icon/analisis-bisnis-dropdown.png"
+                    alt=""
+                    class="min-w-[50px] h-[50px]"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-[600] text-[18px]">Analisis Bisnis</p>
+                  <p class="text-[14px]">
+                    Analisa bisnis mendalam. Wujudkan langkah nyata untuk
+                    keuntungan maksimal
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex flex-row items-center max-w-[400px] px-4 py-5 mx-auto rounded-[20px] hover:bg-slate-300 duration-200 text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]"
+              >
+                <div>
+                  <img
+                    src="assets/icon/perpajakan-dropdown.png"
+                    alt=""
+                    class="min-w-[50px] h-[50px]"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-[600] text-[18px]">Perpajakan</p>
+                  <p class="text-[14px]">
+                    Pelaporan pajak tepat waktu dan optimal dengan tim ahli kami
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex flex-row items-center max-w-[400px] px-4 py-5 mx-auto rounded-[20px] hover:bg-slate-300 duration-200 text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]"
+              >
+                <div>
+                  <img
+                    src="assets/icon/pelatihan-sistem-akutansi-dropdown.png"
+                    alt=""
+                    class="min-w-[50px] h-[50px]"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-[600] text-[18px]">
+                    Pelatihan Sistem Akutansi
+                  </p>
+                  <p class="text-[14px]">
+                    Pelatihan sistem akuntansi untuk digitalisasi dan monitoring
+                    keuangan
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </nav>
     </div>
@@ -225,19 +409,50 @@
 
     <!-- Hero Section Start  -->
     <div class="md:px-[0px]">
-      <div class="bg-[url('/assets/img/hero-background.png')] max-w-full bg-cover bg-no-repeat py-[100px] md:pt-[150px] md:pb-[110px] rounded-b-[70px]">
-        <div class="flex md:flex-row flex-col mx-auto justify-between md:max-w-[1014px] items-center w-[95%] md:w-full md:mb-[-40px]">
+      <div
+        class="bg-[url('/assets/img/hero-background.png')] max-w-full bg-cover bg-no-repeat py-[100px] md:pt-[150px] md:pb-[110px] rounded-b-[70px]"
+      >
+        <div
+          class="flex md:flex-row flex-col mx-auto justify-between md:max-w-[1014px] items-center w-[95%] md:w-full md:mb-[-40px]"
+        >
           <div class="flex flex-col md:w-[47%] gap-[30px] justify-center">
-            <div class="text-center md:text-start text-white text-[25px] md:text-[42px] font-[700]">
-              <p>Optimalkan Pengelolaan Keuangan Bisnismu Bersama<span class="text-[#FBA93E]"> Mydoit Corporate</span></p>
+            <div
+              class="text-center md:text-start text-white text-[25px] md:text-[42px] font-[700]"
+            >
+              <p>
+                Optimalkan Pengelolaan Keuangan Bisnismu Bersama<span
+                  class="text-[#FBA93E]"
+                >
+                  Mydoit Corporate</span
+                >
+              </p>
             </div>
-            <div class="text-center md:text-start text-white text-[15px] md:text-[20px] font-[400]">
-              <p>Bergabung bersama kami dan kami siap membantu mengelola keuangan bisnismu dengan baik</p>
+            <div
+              class="text-center md:text-start text-white text-[15px] md:text-[20px] font-[400]"
+            >
+              <p>
+                Bergabung bersama kami dan kami siap membantu mengelola keuangan
+                bisnismu dengan baik
+              </p>
             </div>
             <div class="flex flex-row gap-[20px]">
-              <a href="https://bit.ly/MyDoitService" target="_blank" class="bg-[#00D27F] text-white px-[25px] py-[15px] md:px-[50px] md:py-[16px] rounded-[15px]">Mulai Sekarang</a>
-              <a href="https://wa.me/628879996667?text=Saya%20ingin%20konsultasi" target="_blank" class="bg-white text-[#00D27F] px-[25px] py-[15px] md:px-[50px] md:py-[16px] flex flex-row gap-[10px] rounded-[15px]"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+              <a
+                href="https://bit.ly/MyDoitService"
+                target="_blank"
+                class="bg-[#00D27F] text-white px-[25px] py-[15px] md:px-[50px] md:py-[16px] rounded-[15px]"
+                >Mulai Sekarang</a
+              >
+              <a
+                href="https://wa.me/628879996667?text=Saya%20ingin%20konsultasi"
+                target="_blank"
+                class="bg-white text-[#00D27F] px-[25px] py-[15px] md:px-[50px] md:py-[16px] flex flex-row gap-[10px] rounded-[15px]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
                   <path
                     d="M12.5 2C18.023 2 22.5 6.477 22.5 12C22.5 17.523 18.023 22 12.5 22C10.7328 22.0029 8.99667 21.5352 7.47001 20.645L2.50401 22L3.85601 17.032C2.96511 15.5049 2.49706 13.768 2.50001 12C2.50001 6.477 6.97701 2 12.5 2ZM9.09201 7.3L8.89201 7.308C8.76254 7.31589 8.63599 7.3499 8.52001 7.408C8.41153 7.46943 8.31251 7.54622 8.22601 7.636C8.10601 7.749 8.03801 7.847 7.96501 7.942C7.59514 8.4229 7.39599 9.01331 7.39901 9.62C7.40101 10.11 7.52901 10.587 7.72901 11.033C8.13801 11.935 8.81101 12.89 9.69901 13.775C9.91301 13.988 10.123 14.202 10.349 14.401C11.4524 15.3725 12.7673 16.073 14.189 16.447L14.757 16.534C14.942 16.544 15.127 16.53 15.313 16.521C15.6043 16.506 15.8886 16.4271 16.146 16.29C16.277 16.2225 16.4048 16.1491 16.529 16.07C16.529 16.07 16.572 16.042 16.654 15.98C16.789 15.88 16.872 15.809 16.984 15.692C17.067 15.606 17.139 15.505 17.194 15.39C17.272 15.227 17.35 14.916 17.382 14.657C17.406 14.459 17.399 14.351 17.396 14.284C17.392 14.177 17.303 14.066 17.206 14.019L16.624 13.758C16.624 13.758 15.754 13.379 15.222 13.137C15.1663 13.1127 15.1067 13.0988 15.046 13.096C14.9776 13.089 14.9085 13.0967 14.8433 13.1186C14.7781 13.1405 14.7183 13.1761 14.668 13.223C14.663 13.221 14.596 13.278 13.873 14.154C13.8315 14.2098 13.7744 14.2519 13.7088 14.2751C13.6433 14.2982 13.5723 14.3013 13.505 14.284C13.4399 14.2665 13.376 14.2445 13.314 14.218C13.19 14.166 13.147 14.146 13.062 14.11C12.4881 13.8595 11.9567 13.5211 11.487 13.107C11.361 12.997 11.244 12.877 11.124 12.761C10.7306 12.3842 10.3877 11.958 10.104 11.493L10.045 11.398C10.0026 11.3342 9.96837 11.2653 9.94301 11.193C9.90501 11.046 10.004 10.928 10.004 10.928C10.004 10.928 10.247 10.662 10.36 10.518C10.47 10.378 10.563 10.242 10.623 10.145C10.741 9.955 10.778 9.76 10.716 9.609C10.436 8.925 10.146 8.244 9.84801 7.568C9.78901 7.434 9.61401 7.338 9.45501 7.319C9.40101 7.313 9.34701 7.307 9.29301 7.303C9.15872 7.29633 9.02415 7.29766 8.89001 7.307L9.09101 7.299L9.09201 7.3Z"
                     fill="#00D27F"
@@ -248,15 +463,25 @@
             </div>
             <div class="hidden md:flex flex-row gap-[20px] items-center">
               <img src="assets/img/testimonial-client.png" alt="" />
-              <p class="text-white md:text-[15px]">100+ Klien puas dengan service kami</p>
+              <p class="text-white md:text-[15px]">
+                100+ Klien puas dengan service kami
+              </p>
             </div>
           </div>
           <div class="flex flex-col justify-center items-center mx-auto">
-            <img src="assets/img/hero-image.png" alt="" class="md:max-h-[900px] w-auto max-h-[300px] mt-[20px] md:mt-0 md:relative md:left-[50px]" />
+            <img
+              src="assets/img/hero-image.png"
+              alt=""
+              class="md:max-h-[900px] w-auto max-h-[300px] mt-[20px] md:mt-0 md:relative md:left-[50px]"
+            />
           </div>
-          <div class="flex md:hidden mt-[20px] flex-col gap-[10px] items-center">
+          <div
+            class="flex md:hidden mt-[20px] flex-col gap-[10px] items-center"
+          >
             <img src="assets/img/testimonial-client.png" alt="" />
-            <p class="text-white md:text-[15px]">100+ Klien puas dengan service kami</p>
+            <p class="text-white md:text-[15px]">
+              100+ Klien puas dengan service kami
+            </p>
           </div>
         </div>
       </div>
@@ -268,19 +493,33 @@
       <div class="company_partner__container">
         <div class="company_partner__left">
           <div class="flex justify-center">
-            <img src="./assets/logo/logo-mydoit.png" width="169" height="46" alt="logo mydoit" />
+            <img
+              src="./assets/logo/logo-mydoit.png"
+              width="169"
+              height="46"
+              alt="logo mydoit"
+            />
           </div>
           <p>Dipercaya oleh Perusahaan Diseluruh <b>Indonesia</b></p>
         </div>
         <div class="company_partner__right">
           <div class="company_partner__logo">
-            <img src="./assets/logo/logo-eduwork-white.png" alt="logo eduwork" />
+            <img
+              src="./assets/logo/logo-eduwork-white.png"
+              alt="logo eduwork"
+            />
           </div>
           <div class="company_partner__logo">
-            <img src="./assets/logo/logo-hisocial-white.png" alt="logo hisocial" />
+            <img
+              src="./assets/logo/logo-hisocial-white.png"
+              alt="logo hisocial"
+            />
           </div>
           <div class="company_partner__logo">
-            <img src="./assets/logo/logo-upscale-white.png" alt="logo upscale" />
+            <img
+              src="./assets/logo/logo-upscale-white.png"
+              alt="logo upscale"
+            />
           </div>
           <div class="company_partner__logo">
             <img src="./assets/logo/logo-elvron-white.png" alt="logo elvron" />
@@ -303,11 +542,18 @@
           <img src="./assets/img/tentang-kami.png" alt="gambar" />
         </div>
         <div class="tentang_kami__main">
-          <span class="tentang_kami__title1 md:justify-start justify-center">Tentang kami</span>
+          <span class="tentang_kami__title1 md:justify-start justify-center"
+            >Tentang kami</span
+          >
 
-          <h3 class="tentang_kami__title2">Tim Profesional Finansial Manajemen</h3>
+          <h3 class="tentang_kami__title2">
+            Tim Profesional Finansial Manajemen
+          </h3>
           <p class="tentang_kami__deskription">
-            Kami berkomitmen untuk memberikan solusi keuangan dan perpajakan terbaik untuk bisnismu. Dengan menyediakan ekosistem yang unggul demi meningkatkan performa bisnis dan keberlanjutan perusahaan secara efektif dan efisien.
+            Kami berkomitmen untuk memberikan solusi keuangan dan perpajakan
+            terbaik untuk bisnismu. Dengan menyediakan ekosistem yang unggul
+            demi meningkatkan performa bisnis dan keberlanjutan perusahaan
+            secara efektif dan efisien.
           </p>
         </div>
       </div>
@@ -319,47 +565,97 @@
       <div class="keuntungan__container">
         <div class="keuntungan__left">
           <h3 class="keuangan__title">
-            <span class="keuntungan__title_smal">Keuntungan bergabung dengan</span><br />
+            <span class="keuntungan__title_smal"
+              >Keuntungan bergabung dengan</span
+            ><br />
             Mydoit Corporate
           </h3>
-          <button class="button__arrow_forward_green" style="padding: 14px 0; font-size: 16px; font-weight: 600; width: 88%">
+          <button
+            class="button__arrow_forward_green"
+            style="
+              padding: 14px 0;
+              font-size: 16px;
+              font-weight: 600;
+              width: 88%;
+            "
+          >
             Bergabung sekarang
-            <img src="./assets/icon/arrow_forward_ios.svg" width="24px" height="24px" alt="icon" />
+            <img
+              src="./assets/icon/arrow_forward_ios.svg"
+              width="24px"
+              height="24px"
+              alt="icon"
+            />
           </button>
         </div>
         <div class="keuntungan__right">
           <ul>
             <li>
-              <span><img src="./assets/icon/work.svg" class="keuntungan__icon" alt="icon" /></span>
+              <span
+                ><img
+                  src="./assets/icon/work.svg"
+                  class="keuntungan__icon"
+                  alt="icon"
+              /></span>
               Tim profesional
             </li>
             <li>
-              <span><img src="./assets/icon/fa-solid_hands-helping.svg" class="keuntungan__icon" alt="icon" /></span>
+              <span
+                ><img
+                  src="./assets/icon/fa-solid_hands-helping.svg"
+                  class="keuntungan__icon"
+                  alt="icon"
+              /></span>
               Freelancer
             </li>
             <li>
-              <span><img src="./assets/icon/headset_mic.svg" class="keuntungan__icon" alt="icon" /></span>
+              <span
+                ><img
+                  src="./assets/icon/headset_mic.svg"
+                  class="keuntungan__icon"
+                  alt="icon"
+              /></span>
               Customer support
             </li>
           </ul>
           <ul>
             <li>
-              <span><img src="./assets/icon/Group.svg" class="keuntungan__icon" alt="icon" /></span>
+              <span
+                ><img
+                  src="./assets/icon/Group.svg"
+                  class="keuntungan__icon"
+                  alt="icon"
+              /></span>
               Privasi dan keamanan data
             </li>
             <li>
-              <span><img src="./assets/icon/file_copy.svg" class="keuntungan__icon" alt="icon" /></span>
+              <span
+                ><img
+                  src="./assets/icon/file_copy.svg"
+                  class="keuntungan__icon"
+                  alt="icon"
+              /></span>
               Akurasi data
             </li>
             <li>
-              <span><img src="./assets/icon/circle.svg" class="keuntungan__icon" alt="icon" /></span>
+              <span
+                ><img
+                  src="./assets/icon/circle.svg"
+                  class="keuntungan__icon"
+                  alt="icon"
+              /></span>
               Fleksibilitas Kebutuhan
             </li>
           </ul>
         </div>
         <button class="keuntungan__button" style="display: none">
           Bergabung sekarang
-          <img src="./assets/icon/arrow_forward_ios.svg" width="24px" height="24px" alt="icon" />
+          <img
+            src="./assets/icon/arrow_forward_ios.svg"
+            width="24px"
+            height="24px"
+            alt="icon"
+          />
         </button>
         <!-- <div class="keuntungan__list">
                 
@@ -381,49 +677,135 @@
       <div class="layanan_kami__container">
         <hr class="layanan_kami__garis" />
         <h3 class="layanan_kami__title1">Kenali <span>Layanan Kami</span></h3>
-        <div class="layanan_kami__main" style="display: flex; flex-direction: column; gap: 80px; width: 100%">
+        <div
+          class="layanan_kami__main"
+          style="display: flex; flex-direction: column; gap: 80px; width: 100%"
+        >
           <!-- Akuntansi -->
           <div class="layanan_kami__card">
             <div>
               <div class="layanan_kami__gambar">
-                <img src="./assets/img/akuntansi.png" width="363px" alt="gambar" />
+                <img
+                  src="./assets/img/akuntansi.png"
+                  width="363px"
+                  alt="gambar"
+                />
               </div>
               <div class="layanan_kami__price">
-                <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: #f4f5f7; border-radius: 15px">
-                  <span style="font-size: 14px; color: #737373">Mulai dari</span>
-                  <span style="padding-left: 24px; font-size: 32px; font-weight: 700; color: #fa8100"> Rp </span>
-                  <span style="font-size: 36px; font-weight: 700; color: #fa8100"> 1.000.000,- </span>
+                <div
+                  style="
+                    text-align: center;
+                    padding: 13px 24px 23px 24px;
+                    background-color: #f4f5f7;
+                    border-radius: 15px;
+                  "
+                >
+                  <span style="font-size: 14px; color: #737373"
+                    >Mulai dari</span
+                  >
+                  <span
+                    style="
+                      padding-left: 24px;
+                      font-size: 32px;
+                      font-weight: 700;
+                      color: #fa8100;
+                    "
+                  >
+                    Rp
+                  </span>
+                  <span
+                    style="font-size: 36px; font-weight: 700; color: #fa8100"
+                  >
+                    1.000.000,-
+                  </span>
                 </div>
               </div>
             </div>
             <div>
               <h1 class="layanan_kami__judul">Akuntansi</h1>
               <p class="layanan_kami__desk">
-                Navigasi kompleksitas pelaporan keuangan dengan keyakinan. Tim ahli kami memastikan laporan keuangan yang akurat, sistematis yang dilengkapi dengan analisis bisnis untuk mendukung proses pengambilan keputusan.
+                Navigasi kompleksitas pelaporan keuangan dengan keyakinan. Tim
+                ahli kami memastikan laporan keuangan yang akurat, sistematis
+                yang dilengkapi dengan analisis bisnis untuk mendukung proses
+                pengambilan keputusan.
               </p>
-              <div class="layanan_kami__list_box" style="display: flex; gap: 18px">
+              <div
+                class="layanan_kami__list_box"
+                style="display: flex; gap: 18px"
+              >
                 <ul class="layanan_kami__list" style="flex: 1">
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Rekonsiliasi kas dan bank</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Account payable</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Account receivable</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Manajemen persediaan</li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Rekonsiliasi kas dan bank
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Account payable
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Account receivable
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Manajemen persediaan
+                  </li>
                 </ul>
                 <ul class="layanan_kami__list" style="flex: 1">
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Payroll</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Analisis keuangan</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Penyusunan laporan keuangan</li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Payroll
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Analisis keuangan
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Penyusunan laporan keuangan
+                  </li>
                 </ul>
               </div>
               <div class="layanan_kami__price_mobile" style="display: none">
-                <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: white; border-radius: 15px">
-                  <span class="mulai_dari" style="font-size: 14px; color: #737373">Mulai dari</span>
+                <div
+                  style="
+                    text-align: center;
+                    padding: 13px 24px 23px 24px;
+                    background-color: white;
+                    border-radius: 15px;
+                  "
+                >
+                  <span
+                    class="mulai_dari"
+                    style="font-size: 14px; color: #737373"
+                    >Mulai dari</span
+                  >
 
-                  <span class="price" style="font-size: 36px; font-weight: 700; color: #fa8100"> Rp. 1.000.000,- </span>
+                  <span
+                    class="price"
+                    style="font-size: 36px; font-weight: 700; color: #fa8100"
+                  >
+                    Rp. 1.000.000,-
+                  </span>
                 </div>
               </div>
-              <button class="button__layanan_kami" style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px">
+              <button
+                class="button__layanan_kami"
+                style="
+                  width: 260px;
+                  margin-top: 30px;
+                  padding: 14px 0;
+                  font-size: 14px;
+                  letter-spacing: 0.64px;
+                "
+              >
                 Pelajari Selengkapnya
-                <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon" />
+                <img
+                  src="./assets/icon/arrow_forward_ios.svg"
+                  width="16px"
+                  height="16px"
+                  alt="icon"
+                />
               </button>
             </div>
           </div>
@@ -433,39 +815,117 @@
           <div class="layanan_kami__card__right">
             <div>
               <h1 class="layanan_kami__judul">Perpajakan</h1>
-              <p class="layanan_kami__desk">Pelaporan pajak tepat waktu. Tim spesialis kami menghitung, menyiapkan, dan melaporkan pajakmu dengan tepat, memastikan compliance dan mengoptimalkan posisi pajakmu.</p>
-              <div class="layanan_kami__list_box" style="display: flex; gap: 18px">
+              <p class="layanan_kami__desk">
+                Pelaporan pajak tepat waktu. Tim spesialis kami menghitung,
+                menyiapkan, dan melaporkan pajakmu dengan tepat, memastikan
+                compliance dan mengoptimalkan posisi pajakmu.
+              </p>
+              <div
+                class="layanan_kami__list_box"
+                style="display: flex; gap: 18px"
+              >
                 <ul class="layanan_kami__list" style="flex: 1">
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> SPT PPN</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> PPh pasal 4 ayat 2</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Penerbitan e-Faktur</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Pembuatan NPWP Badan dan Pribadi</li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" /> SPT
+                    PPN
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" /> PPh
+                    pasal 4 ayat 2
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Penerbitan e-Faktur
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Pembuatan NPWP Badan dan Pribadi
+                  </li>
                 </ul>
                 <ul class="layanan_kami__list" style="flex: 1">
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> PPh (21,23,25,26,29)</li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" /> PPh
+                    (21,23,25,26,29)
+                  </li>
                 </ul>
               </div>
               <div class="layanan_kami__price_mobile" style="display: none">
-                <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: white; border-radius: 15px">
-                  <span class="mulai_dari" style="font-size: 14px; color: #737373">Mulai dari</span>
+                <div
+                  style="
+                    text-align: center;
+                    padding: 13px 24px 23px 24px;
+                    background-color: white;
+                    border-radius: 15px;
+                  "
+                >
+                  <span
+                    class="mulai_dari"
+                    style="font-size: 14px; color: #737373"
+                    >Mulai dari</span
+                  >
 
-                  <span class="price" style="font-size: 36px; font-weight: 700; color: #fa8100"> Rp. 1.000.000,- </span>
+                  <span
+                    class="price"
+                    style="font-size: 36px; font-weight: 700; color: #fa8100"
+                  >
+                    Rp. 1.000.000,-
+                  </span>
                 </div>
               </div>
-              <button class="button__layanan_kami" style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px">
+              <button
+                class="button__layanan_kami"
+                style="
+                  width: 260px;
+                  margin-top: 30px;
+                  padding: 14px 0;
+                  font-size: 14px;
+                  letter-spacing: 0.64px;
+                "
+              >
                 Pelajari Selengkapnya
-                <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon" />
+                <img
+                  src="./assets/icon/arrow_forward_ios.svg"
+                  width="16px"
+                  height="16px"
+                  alt="icon"
+                />
               </button>
             </div>
             <div>
               <div class="layanan_kami__gambar">
-                <img src="./assets/img/perpajakan.png" width="363px" alt="gambar" />
+                <img
+                  src="./assets/img/perpajakan.png"
+                  width="363px"
+                  alt="gambar"
+                />
               </div>
               <div class="layanan_kami__price">
-                <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: #f4f5f7; border-radius: 15px">
-                  <span style="font-size: 14px; color: #737373">Mulai dari</span>
-                  <span style="padding-left: 24px; font-size: 32px; font-weight: 700; color: #fa8100"> Rp </span>
-                  <span style="font-size: 36px; font-weight: 700; color: #fa8100"> 1.000.000,- </span>
+                <div
+                  style="
+                    text-align: center;
+                    padding: 13px 24px 23px 24px;
+                    background-color: #f4f5f7;
+                    border-radius: 15px;
+                  "
+                >
+                  <span style="font-size: 14px; color: #737373"
+                    >Mulai dari</span
+                  >
+                  <span
+                    style="
+                      padding-left: 24px;
+                      font-size: 32px;
+                      font-weight: 700;
+                      color: #fa8100;
+                    "
+                  >
+                    Rp
+                  </span>
+                  <span
+                    style="font-size: 36px; font-weight: 700; color: #fa8100"
+                  >
+                    1.000.000,-
+                  </span>
                 </div>
               </div>
             </div>
@@ -476,45 +936,127 @@
           <div class="layanan_kami__card">
             <div>
               <div class="layanan_kami__gambar">
-                <img src="./assets/img/akuntansi.png" width="363px" alt="gambar" />
+                <img
+                  src="./assets/img/akuntansi.png"
+                  width="363px"
+                  alt="gambar"
+                />
               </div>
               <div class="layanan_kami__price">
-                <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: #f4f5f7; border-radius: 15px">
-                  <span style="font-size: 14px; color: #737373">Mulai dari</span>
-                  <span style="padding-left: 24px; font-size: 32px; font-weight: 700; color: #fa8100"> Rp </span>
-                  <span style="font-size: 36px; font-weight: 700; color: #fa8100"> 1.000.000,- </span>
+                <div
+                  style="
+                    text-align: center;
+                    padding: 13px 24px 23px 24px;
+                    background-color: #f4f5f7;
+                    border-radius: 15px;
+                  "
+                >
+                  <span style="font-size: 14px; color: #737373"
+                    >Mulai dari</span
+                  >
+                  <span
+                    style="
+                      padding-left: 24px;
+                      font-size: 32px;
+                      font-weight: 700;
+                      color: #fa8100;
+                    "
+                  >
+                    Rp
+                  </span>
+                  <span
+                    style="font-size: 36px; font-weight: 700; color: #fa8100"
+                  >
+                    1.000.000,-
+                  </span>
                 </div>
               </div>
             </div>
             <div>
               <h1 class="layanan_kami__judul">Analisis Bisnis</h1>
               <p class="layanan_kami__desk">
-                Analisis Bisnis untuk pengambilan keputusan dengan analisis medalam. Para ahli kami menggali data keuanganmu, memberikan wawasan yang dapat diambil tindakan untuk mendorong pertumbuhan, meningkatkan efisiensi, dan
-                memaksimalkan profitabilitas.
+                Analisis Bisnis untuk pengambilan keputusan dengan analisis
+                medalam. Para ahli kami menggali data keuanganmu, memberikan
+                wawasan yang dapat diambil tindakan untuk mendorong pertumbuhan,
+                meningkatkan efisiensi, dan memaksimalkan profitabilitas.
               </p>
-              <div class="layanan_kami__list_box" style="display: flex; gap: 18px">
+              <div
+                class="layanan_kami__list_box"
+                style="display: flex; gap: 18px"
+              >
                 <ul class="layanan_kami__list" style="flex: 1">
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Penyusunan anggaran</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Finansial modeling</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Visualisasi bisnis</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Strategi mengelola pendapatan</li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Penyusunan anggaran
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Finansial modeling
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Visualisasi bisnis
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Strategi mengelola pendapatan
+                  </li>
                 </ul>
                 <ul class="layanan_kami__list" style="flex: 1">
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Pembuatan annual report</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Pembuatan SOP keuangan</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Forecasting kas/biaya/pendapatan</li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Pembuatan annual report
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Pembuatan SOP keuangan
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Forecasting kas/biaya/pendapatan
+                  </li>
                 </ul>
               </div>
               <div class="layanan_kami__price_mobile" style="display: none">
-                <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: white; border-radius: 15px">
-                  <span class="mulai_dari" style="font-size: 14px; color: #737373">Mulai dari</span>
+                <div
+                  style="
+                    text-align: center;
+                    padding: 13px 24px 23px 24px;
+                    background-color: white;
+                    border-radius: 15px;
+                  "
+                >
+                  <span
+                    class="mulai_dari"
+                    style="font-size: 14px; color: #737373"
+                    >Mulai dari</span
+                  >
 
-                  <span class="price" style="font-size: 36px; font-weight: 700; color: #fa8100"> Rp. 1.000.000,- </span>
+                  <span
+                    class="price"
+                    style="font-size: 36px; font-weight: 700; color: #fa8100"
+                  >
+                    Rp. 1.000.000,-
+                  </span>
                 </div>
               </div>
-              <button class="button__layanan_kami" style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px">
+              <button
+                class="button__layanan_kami"
+                style="
+                  width: 260px;
+                  margin-top: 30px;
+                  padding: 14px 0;
+                  font-size: 14px;
+                  letter-spacing: 0.64px;
+                "
+              >
                 Pelajari Selengkapnya
-                <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon" />
+                <img
+                  src="./assets/icon/arrow_forward_ios.svg"
+                  width="16px"
+                  height="16px"
+                  alt="icon"
+                />
               </button>
             </div>
           </div>
@@ -525,44 +1067,127 @@
             <div style="width: 100%">
               <h1 class="layanan_kami__judul">Pelatihan sistem akuntansi</h1>
               <p class="layanan_kami__desk">
-                Pelatihan sistem akuntansi untuk mewujudkan digitalisasi dalam lingkup bisnis serta memudahkan monitoring data keuangan. Tingkatkan kualitas SDM dan pengelolaan data keuangan melalui pelatihan sistem akuntansi.
+                Pelatihan sistem akuntansi untuk mewujudkan digitalisasi dalam
+                lingkup bisnis serta memudahkan monitoring data keuangan.
+                Tingkatkan kualitas SDM dan pengelolaan data keuangan melalui
+                pelatihan sistem akuntansi.
               </p>
-              <div class="layanan_kami__list_box" style="display: flex; gap: 18px">
+              <div
+                class="layanan_kami__list_box"
+                style="display: flex; gap: 18px"
+              >
                 <ul class="layanan_kami__list" style="flex: 1">
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Konsep</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Konsultasi</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Pengumpulan data saldo awal</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Setting database awal</li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Konsep
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Konsultasi
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Pengumpulan data saldo awal
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Setting database awal
+                  </li>
                 </ul>
                 <ul class="layanan_kami__list" style="flex: 1">
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Pelatihan dan pendampingan</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Implementasi</li>
-                  <li><img src="./assets/icon/check_circle.svg" alt="icon" /> Penyusunan laporan keuangan</li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Pelatihan dan pendampingan
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Implementasi
+                  </li>
+                  <li>
+                    <img src="./assets/icon/check_circle.svg" alt="icon" />
+                    Penyusunan laporan keuangan
+                  </li>
                 </ul>
               </div>
               <div class="layanan_kami__price_mobile" style="display: none">
-                <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: white; border-radius: 15px">
-                  <span class="mulai_dari" style="font-size: 14px; color: #737373">Mulai dari</span>
+                <div
+                  style="
+                    text-align: center;
+                    padding: 13px 24px 23px 24px;
+                    background-color: white;
+                    border-radius: 15px;
+                  "
+                >
+                  <span
+                    class="mulai_dari"
+                    style="font-size: 14px; color: #737373"
+                    >Mulai dari</span
+                  >
 
-                  <span class="price" style="font-size: 36px; font-weight: 700; color: #fa8100"> Rp. 1.000.000,- </span>
+                  <span
+                    class="price"
+                    style="font-size: 36px; font-weight: 700; color: #fa8100"
+                  >
+                    Rp. 1.000.000,-
+                  </span>
                 </div>
               </div>
               <a href="./pelatihan-akuntansi.html ">
-                <button class="button__layanan_kami" style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px">
+                <button
+                  class="button__layanan_kami"
+                  style="
+                    width: 260px;
+                    margin-top: 30px;
+                    padding: 14px 0;
+                    font-size: 14px;
+                    letter-spacing: 0.64px;
+                  "
+                >
                   Pelajari Selengkapnya
-                  <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon" />
+                  <img
+                    src="./assets/icon/arrow_forward_ios.svg"
+                    width="16px"
+                    height="16px"
+                    alt="icon"
+                  />
                 </button>
               </a>
             </div>
             <div>
               <div class="layanan_kami__gambar">
-                <img src="./assets/img/akuntansi.png" width="363px" alt="gambar" />
+                <img
+                  src="./assets/img/akuntansi.png"
+                  width="363px"
+                  alt="gambar"
+                />
               </div>
               <div class="layanan_kami__price">
-                <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: #f4f5f7; border-radius: 15px">
-                  <span style="font-size: 14px; color: #737373">Mulai dari</span>
-                  <span style="padding-left: 24px; font-size: 32px; font-weight: 700; color: #fa8100"> Rp </span>
-                  <span style="font-size: 36px; font-weight: 700; color: #fa8100"> 1.000.000,- </span>
+                <div
+                  style="
+                    text-align: center;
+                    padding: 13px 24px 23px 24px;
+                    background-color: #f4f5f7;
+                    border-radius: 15px;
+                  "
+                >
+                  <span style="font-size: 14px; color: #737373"
+                    >Mulai dari</span
+                  >
+                  <span
+                    style="
+                      padding-left: 24px;
+                      font-size: 32px;
+                      font-weight: 700;
+                      color: #fa8100;
+                    "
+                  >
+                    Rp
+                  </span>
+                  <span
+                    style="font-size: 36px; font-weight: 700; color: #fa8100"
+                  >
+                    1.000.000,-
+                  </span>
                 </div>
               </div>
             </div>
@@ -574,55 +1199,141 @@
     <!-- Akhir Layanan Kami -->
 
     <!-- Langkah Pemesanan -->
-    <div class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[110px] w-[95%] md:w-full mb-[60px]">
-      <p class="md:text-[32px] text-[25px] text-center font-[600] [word-spacing:8px] mb-[20px] md:mb-[30px]">Langkah-Langkah <span class="text-[#00A866]">Pemesanan</span></p>
-      <div class="hidden md:flex absolute border-[1.5px] border-[#00D27F] h-[500px] mt-[80px]"></div>
+    <div
+      class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[110px] w-[95%] md:w-full mb-[60px]"
+    >
+      <p
+        class="md:text-[32px] text-[25px] text-center font-[600] [word-spacing:8px] mb-[20px] md:mb-[30px]"
+      >
+        Langkah-Langkah <span class="text-[#00A866]">Pemesanan</span>
+      </p>
+      <div
+        class="hidden md:flex absolute border-[1.5px] border-[#00D27F] h-[500px] mt-[80px]"
+      ></div>
       <div class="hidden md:flex absolute flex-col gap-[80px] mt-[90px]">
         <div class="hidden md:flex justify-center items-center">
-          <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <svg
+            class="absolute"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
             <circle cx="6" cy="6" r="6" fill="#01C276" />
           </svg>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <circle cx="10" cy="10" r="10" fill="#01C276" fill-opacity="0.15" />
           </svg>
         </div>
         <div class="hidden md:flex justify-center items-center">
-          <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <svg
+            class="absolute"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
             <circle cx="6" cy="6" r="6" fill="#01C276" />
           </svg>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <circle cx="10" cy="10" r="10" fill="#01C276" fill-opacity="0.15" />
           </svg>
         </div>
         <div class="hidden md:flex justify-center items-center">
-          <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <svg
+            class="absolute"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
             <circle cx="6" cy="6" r="6" fill="#01C276" />
           </svg>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <circle cx="10" cy="10" r="10" fill="#01C276" fill-opacity="0.15" />
           </svg>
         </div>
         <div class="hidden md:flex justify-center items-center">
-          <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <svg
+            class="absolute"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
             <circle cx="6" cy="6" r="6" fill="#01C276" />
           </svg>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <circle cx="10" cy="10" r="10" fill="#01C276" fill-opacity="0.15" />
           </svg>
         </div>
         <div class="hidden md:flex justify-center items-center">
-          <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <svg
+            class="absolute"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
             <circle cx="6" cy="6" r="6" fill="#01C276" />
           </svg>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <circle cx="10" cy="10" r="10" fill="#01C276" fill-opacity="0.15" />
           </svg>
         </div>
         <div class="hidden md:flex justify-center items-center">
-          <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <svg
+            class="absolute"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
             <circle cx="6" cy="6" r="6" fill="#01C276" />
           </svg>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <circle cx="10" cy="10" r="10" fill="#01C276" fill-opacity="0.15" />
           </svg>
         </div>
@@ -630,22 +1341,57 @@
 
       <div class="flex flex-col md:flex-row md:gap-[120px] gap-[10px]">
         <div class="flex flex-col md:gap-[50px] gap-[10px]">
-          <div class="flex mx-auto flex-row items-center justify-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
-            <div><img src="assets/img/isiform.png" alt="" class="min-w-[50px] h-[50px]" /></div>
+          <div
+            class="flex mx-auto flex-row items-center justify-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
+            <div>
+              <img
+                src="assets/img/isiform.png"
+                alt=""
+                class="min-w-[50px] h-[50px]"
+              />
+            </div>
             <div class="flex flex-col">
               <p class="font-[600] text-[18px] mb-[10px]">Pengisian Form</p>
-              <p>Isi form yang ada dilayanan kami. Isi form <a href="https://bit.ly/MyDoitService" target="_blank" class="text-emerald-500">disini</a></p>
+              <p>
+                Isi form yang ada dilayanan kami. Isi form
+                <a
+                  href="https://bit.ly/MyDoitService"
+                  target="_blank"
+                  class="text-emerald-500"
+                  >disini</a
+                >
+              </p>
             </div>
           </div>
-          <div class="flex flex-row items-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
-            <div><img src="assets/img/konsultasi.png" alt="" class="min-w-[50px] h-[50px]" /></div>
+          <div
+            class="flex flex-row items-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
+            <div>
+              <img
+                src="assets/img/konsultasi.png"
+                alt=""
+                class="min-w-[50px] h-[50px]"
+              />
+            </div>
             <div class="flex flex-col">
               <p class="font-[600] text-[18px] mb-[10px]">Konsultasi</p>
               <p>Konsultasikan kebutuhan yang anda inginkan</p>
             </div>
           </div>
-          <div class="flex flex-row items-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
-            <div><img src="assets/img/mou.png" alt="" class="min-w-[50px] h-[50px]" /></div>
+          <div
+            class="flex flex-row items-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
+            <div>
+              <img
+                src="assets/img/mou.png"
+                alt=""
+                class="min-w-[50px] h-[50px]"
+              />
+            </div>
             <div class="flex flex-col">
               <p class="font-[600] text-[18px] mb-[10px]">MOU</p>
               <p>Menyetujui kesepakatan tertulis atas kerjasama</p>
@@ -653,22 +1399,49 @@
           </div>
         </div>
         <div class="flex flex-col md:mt-[90px] md:gap-[50px] gap-[10px]">
-          <div class="flex flex-row items-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
-            <div><img src="assets/img/jadwal.png" alt="" class="min-w-[50px] h-[50px]" /></div>
+          <div
+            class="flex flex-row items-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
+            <div>
+              <img
+                src="assets/img/jadwal.png"
+                alt=""
+                class="min-w-[50px] h-[50px]"
+              />
+            </div>
             <div class="flex flex-col">
               <p class="font-[600] text-[18px] mb-[10px]">Jadwal Meeting</p>
               <p>Tentukan waktu untuk meeting dengan team kami</p>
             </div>
           </div>
-          <div class="flex flex-row items-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
-            <div><img src="assets/img/service.png" alt="" class="min-w-[50px] h-[50px]" /></div>
+          <div
+            class="flex flex-row items-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
+            <div>
+              <img
+                src="assets/img/service.png"
+                alt=""
+                class="min-w-[50px] h-[50px]"
+              />
+            </div>
             <div class="flex flex-col">
               <p class="font-[600] text-[18px] mb-[10px]">Service</p>
               <p>Pilih service yang sesuai dengan kebutuhanmu</p>
             </div>
           </div>
-          <div class="flex flex-row items-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
-            <div><img src="assets/img/mulai.png" alt="" class="min-w-[50px] h-[50px]" /></div>
+          <div
+            class="flex flex-row items-center border border-[#D9D9D9] rounded-[15px] px-[35px] py-[25px] gap-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
+            <div>
+              <img
+                src="assets/img/mulai.png"
+                alt=""
+                class="min-w-[50px] h-[50px]"
+              />
+            </div>
             <div class="flex flex-col">
               <p class="font-[600] text-[18px] mb-[10px]">Mulai</p>
               <p>Kami akan mulai untuk mengerjakan tugas</p>
@@ -682,19 +1455,61 @@
     <!-- Banner MyDoit Mobile -->
     <div class="banner_mydoit_mobile">
       <div class="banner_mydoit_mobile__container">
-        <img src="./assets/img/texture.png" class="texture" style="display: none" alt="mockup" />
-        <div class="banner_mydoit_mobile__main" style="padding: 60px 0 0px 60px">
-          <p class="banner_mydoit_mobile__question">“Butuh finansial manajemen <br />pribadi untuk mencapai kebebasan finansial?”</p>
+        <img
+          src="./assets/img/texture.png"
+          class="texture"
+          style="display: none"
+          alt="mockup"
+        />
+        <div
+          class="banner_mydoit_mobile__main"
+          style="padding: 60px 0 0px 60px"
+        >
+          <p class="banner_mydoit_mobile__question">
+            “Butuh finansial manajemen <br />pribadi untuk mencapai kebebasan
+            finansial?”
+          </p>
           <h3 class="banner_mydoit_mobile__judul">MyDoit Mobile</h3>
-          <p class="banner_mydoit_mobile__desk">Solusi tepat untuk wujudkan kebebasan finansial. Download aplikasi kami sekarang, dan nikmati berbagai fitur unggulan dari kami <b>GRATIS!</b></p>
+          <p class="banner_mydoit_mobile__desk">
+            Solusi tepat untuk wujudkan kebebasan finansial. Download aplikasi
+            kami sekarang, dan nikmati berbagai fitur unggulan dari kami
+            <b>GRATIS!</b>
+          </p>
           <div class="link_app" style="margin-top: 26px">
-            <div style="display: grid; grid-template-columns: 179px 179px; align-items: center; gap: 32px">
-              <a href="http://play.google.com/store/?pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" style="flex: 1">
-                <img alt="Temukan di Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/id_badge_web_generic.png" style="width: 100%" />
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 179px 179px;
+                align-items: center;
+                gap: 32px;
+              "
+            >
+              <a
+                href="http://play.google.com/store/?pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                style="flex: 1"
+              >
+                <img
+                  alt="Temukan di Google Play"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/id_badge_web_generic.png"
+                  style="width: 100%"
+                />
               </a>
 
-              <a href="https://apps.apple.com/us/app/mobile-legends-bang-bang/id1160056295?itsct=apps_box_badge&amp;itscg=30200" style="display: block; overflow: hidden; border-radius: 13px; width: 100%; flex: 1">
-                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/id-id?size=250x83&amp;releaseDate=1478908800" alt="Download on the App Store" style="border-radius: 13px; width: 100%" />
+              <a
+                href="https://apps.apple.com/us/app/mobile-legends-bang-bang/id1160056295?itsct=apps_box_badge&amp;itscg=30200"
+                style="
+                  display: block;
+                  overflow: hidden;
+                  border-radius: 13px;
+                  width: 100%;
+                  flex: 1;
+                "
+              >
+                <img
+                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/id-id?size=250x83&amp;releaseDate=1478908800"
+                  alt="Download on the App Store"
+                  style="border-radius: 13px; width: 100%"
+                />
               </a>
             </div>
           </div>
@@ -708,7 +1523,11 @@
           </div>
         </div>
         <div class="banner_mydoit_mobile__image">
-          <img src="./assets/img/mockup-mydoit-mobile.png" style="position: absolute; left: -30px; bottom: -30px; width: 100%" alt="mockup" />
+          <img
+            src="./assets/img/mockup-mydoit-mobile.png"
+            style="position: absolute; left: -30px; bottom: -30px; width: 100%"
+            alt="mockup"
+          />
         </div>
       </div>
     </div>
@@ -716,50 +1535,100 @@
 
     <!-- Pengguna MyDoit Corporate -->
     <div class="pengguna__mydoit hidden">
-      <h3 class="pengguna__mydoit__judul">Kata mereka yang sudah <br />menggunakan <span style="color: #007e4c">MyDoit Corporate</span></h3>
+      <h3 class="pengguna__mydoit__judul">
+        Kata mereka yang sudah <br />menggunakan
+        <span style="color: #007e4c">MyDoit Corporate</span>
+      </h3>
       <div class="pengguna__mydoit__container">
         <div style="position: relative">
           <div class="swiper swiper_pengguna">
-            <div class="swiper-wrapper swiper_pengguna__wrapper" style="height: 216px">
+            <div
+              class="swiper-wrapper swiper_pengguna__wrapper"
+              style="height: 216px"
+            >
               <div class="swiper-slide" data-nama="alan-lee">
                 <div class="slide__pengguna">
-                  <img src="./assets/img/client/default.jpg" style="height: 100%; object-fit: cover; object-position: center" alt="gambar" />
+                  <img
+                    src="./assets/img/client/default.jpg"
+                    style="
+                      height: 100%;
+                      object-fit: cover;
+                      object-position: center;
+                    "
+                    alt="gambar"
+                  />
                 </div>
                 <span>Alan Lee</span>
               </div>
               <div class="swiper-slide" data-nama="anisa-wati">
                 <div class="slide__pengguna">
-                  <img src="./assets/img/client/default.jpg" style="height: 100%; object-fit: cover; object-position: center" alt="gambar" />
+                  <img
+                    src="./assets/img/client/default.jpg"
+                    style="
+                      height: 100%;
+                      object-fit: cover;
+                      object-position: center;
+                    "
+                    alt="gambar"
+                  />
                 </div>
                 <span>Anisa Wati</span>
               </div>
               <div class="swiper-slide" data-nama="jhon-doe">
                 <div class="slide__pengguna">
-                  <img src="./assets/img/client/default.jpg" style="height: 100%; object-fit: cover; object-position: center" alt="gambar" />
+                  <img
+                    src="./assets/img/client/default.jpg"
+                    style="
+                      height: 100%;
+                      object-fit: cover;
+                      object-position: center;
+                    "
+                    alt="gambar"
+                  />
                 </div>
                 <span>Jhon Doe</span>
               </div>
               <div class="swiper-slide" data-nama="tomy-william">
                 <div class="slide__pengguna">
-                  <img src="./assets/img/client/default.jpg" style="height: 100%; object-fit: cover; object-position: center" alt="gambar" />
+                  <img
+                    src="./assets/img/client/default.jpg"
+                    style="
+                      height: 100%;
+                      object-fit: cover;
+                      object-position: center;
+                    "
+                    alt="gambar"
+                  />
                 </div>
                 <span>Tomy William</span>
               </div>
             </div>
           </div>
           <button class="swiper_pengguna_button_prev">
-            <img src="./assets/icon/arrow_forward_ios.svg" width="20" height="20" style="transform: rotate(180deg)" alt="icon" />
+            <img
+              src="./assets/icon/arrow_forward_ios.svg"
+              width="20"
+              height="20"
+              style="transform: rotate(180deg)"
+              alt="icon"
+            />
           </button>
           <button class="swiper_pengguna_button_next">
-            <img src="./assets/icon/arrow_forward_ios.svg" width="20" height="20" alt="icon" />
+            <img
+              src="./assets/icon/arrow_forward_ios.svg"
+              width="20"
+              height="20"
+              alt="icon"
+            />
           </button>
         </div>
         <div class="swiper_pengguna__content">
           <img src="./assets/icon/rating.png" alt="rating" />
           <p class="swiper_pengguna__text">
-            Analisis kinerja keuangan yang disediakan oleh layanan ini sungguh luar biasa. Saya dapat dengan cepat mengidentifikasi tren dan mengambil tindakan yang diperlukan. Hal ini membantu perusahaan kami berkembang lebih efisien.<b
-              >"PT Jaya Bersama - Alan lee”</b
-            >
+            Analisis kinerja keuangan yang disediakan oleh layanan ini sungguh
+            luar biasa. Saya dapat dengan cepat mengidentifikasi tren dan
+            mengambil tindakan yang diperlukan. Hal ini membantu perusahaan kami
+            berkembang lebih efisien.<b>"PT Jaya Bersama - Alan lee”</b>
           </p>
         </div>
         <div class="swiper_pengguna_pagination"></div>
@@ -774,9 +1643,17 @@
           <img src="./assets/img/cta-image.png" class="gambar_cta" alt="cta" />
         </div>
         <div class="cta_home__content">
-          <img src="./assets/logo/mydoit-corporate.png" width="164" height="47" alt="mydoit logo" />
+          <img
+            src="./assets/logo/mydoit-corporate.png"
+            width="164"
+            height="47"
+            alt="mydoit logo"
+          />
           <h3>Jadikan Keuangan Bisnismu Lebih Baik Hari Ini!</h3>
-          <p>Hubungi kami sekarang untuk mendapatkan solusi keuangan yang tepat untuk bisnismu</p>
+          <p>
+            Hubungi kami sekarang untuk mendapatkan solusi keuangan yang tepat
+            untuk bisnismu
+          </p>
           <button>
             Konsultasi gratis
             <img src="./assets/icon/arrow_forward_ios.svg" alt="icon" />
@@ -797,15 +1674,31 @@
           <div class="artikel__card">
             <div class="image_tags">
               <div class="artikel__image_box">
-                <img src="./assets/img/artikel1.png" style="width: 100%; object-fit: cover; object-position: center" alt="thumblnail artikel" />
+                <img
+                  src="./assets/img/artikel1.png"
+                  style="
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                  "
+                  alt="thumblnail artikel"
+                />
               </div>
-              <span class="artikel__tags_mobile" style="display: none">Financial</span>
+              <span class="artikel__tags_mobile" style="display: none"
+                >Financial</span
+              >
             </div>
 
             <div class="artikel">
               <span class="artikel__tags">Financial</span>
-              <h3 class="artikel__judul">Tips Keuangan, Penganggaran, dan Strategi Investasi.</h3>
-              <p class="artikel__isi">Mengelola keuangan dengan bijak adalah kunci untuk mencapai stabilitas finansial. Prioritaskan pembuatan anggaran, sisihkan dana darurat, dan investasikan dengan cerdas.</p>
+              <h3 class="artikel__judul">
+                Tips Keuangan, Penganggaran, dan Strategi Investasi.
+              </h3>
+              <p class="artikel__isi">
+                Mengelola keuangan dengan bijak adalah kunci untuk mencapai
+                stabilitas finansial. Prioritaskan pembuatan anggaran, sisihkan
+                dana darurat, dan investasikan dengan cerdas.
+              </p>
               <a href="#" class="artikel__link">
                 Baca Lebih Lanjut
                 <img src="./assets/icon/arrow-right.svg" alt="arrow" />
@@ -815,14 +1708,30 @@
           <div class="artikel__card">
             <div class="image_tags">
               <div class="artikel__image_box">
-                <img src="./assets/img/artikel2.png" style="width: 100%; object-fit: cover; object-position: center" alt="thumblnail artikel" />
+                <img
+                  src="./assets/img/artikel2.png"
+                  style="
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                  "
+                  alt="thumblnail artikel"
+                />
               </div>
-              <span class="artikel__tags_mobile" style="display: none">Financial</span>
+              <span class="artikel__tags_mobile" style="display: none"
+                >Financial</span
+              >
             </div>
             <div class="artikel">
               <span class="artikel__tags">Financial</span>
-              <h3 class="artikel__judul">Tips Keuangan, Penganggaran, dan Strategi Investasi.</h3>
-              <p class="artikel__isi">Mengelola keuangan dengan bijak adalah kunci untuk mencapai stabilitas finansial. Prioritaskan pembuatan anggaran, sisihkan dana darurat, dan investasikan dengan cerdas.</p>
+              <h3 class="artikel__judul">
+                Tips Keuangan, Penganggaran, dan Strategi Investasi.
+              </h3>
+              <p class="artikel__isi">
+                Mengelola keuangan dengan bijak adalah kunci untuk mencapai
+                stabilitas finansial. Prioritaskan pembuatan anggaran, sisihkan
+                dana darurat, dan investasikan dengan cerdas.
+              </p>
               <a href="#" class="artikel__link">
                 Baca Lebih Lanjut
                 <img src="./assets/icon/arrow-right.svg" alt="arrow" />
@@ -838,26 +1747,53 @@
     <div class="qna">
       <div class="qna__container">
         <h1>Frequently Asked <span style="color: #007e4c">Questions</span></h1>
-        <p>Kami menyediakan layanan pengelolaan keuangan, yang komperhensive untuk membantu mengelola keuangan bisnismu</p>
+        <p>
+          Kami menyediakan layanan pengelolaan keuangan, yang komperhensive
+          untuk membantu mengelola keuangan bisnismu
+        </p>
         <div>
           <button class="accordion">
             <span>Bagaimana cara mendaftar layanan mydoit corporate?</span>
             <span>
-              <img src="./assets/icon/arrow_forward.svg" style="margin-top: 6px" alt="icon" />
+              <img
+                src="./assets/icon/arrow_forward.svg"
+                style="margin-top: 6px"
+                alt="icon"
+              />
             </span>
           </button>
-          <div class="panel">Isi form <a href="https://bit.ly/MyDoitService" class="text-green-500 underline">disini</a> dan data-data yang dibutuhkan. Tim kami akan menghubungi anda untuk penjadwalan meeting.</div>
+          <div class="panel">
+            Isi form
+            <a
+              href="https://bit.ly/MyDoitService"
+              class="text-green-500 underline"
+              >disini</a
+            >
+            dan data-data yang dibutuhkan. Tim kami akan menghubungi anda untuk
+            penjadwalan meeting.
+          </div>
           <button class="accordion">
             <span>Jenis bisnis apa saja yang didukung?</span>
             <span>
-              <img src="./assets/icon/arrow_forward.svg" style="margin-top: 6px" alt="icon" />
+              <img
+                src="./assets/icon/arrow_forward.svg"
+                style="margin-top: 6px"
+                alt="icon"
+              />
             </span>
           </button>
-          <div class="panel">Kami melayani berbagai jenis bisnis mulai dari FnB, Jasa, Advertising, Distributor hingga E-Commerce</div>
+          <div class="panel">
+            Kami melayani berbagai jenis bisnis mulai dari FnB, Jasa,
+            Advertising, Distributor hingga E-Commerce
+          </div>
           <button class="accordion">
             <span>Data apa saja yang dibutuhkan?</span>
             <span>
-              <img src="./assets/icon/arrow_forward.svg" style="margin-top: 6px" alt="icon" />
+              <img
+                src="./assets/icon/arrow_forward.svg"
+                style="margin-top: 6px"
+                alt="icon"
+              />
             </span>
           </button>
           <div class="panel">
@@ -870,12 +1806,21 @@
             </ul>
           </div>
           <button class="accordion">
-            <span>Bagaimana jika perusahaan saya belum memiliki data tersebut?</span>
+            <span
+              >Bagaimana jika perusahaan saya belum memiliki data
+              tersebut?</span
+            >
             <span>
-              <img src="./assets/icon/arrow_forward.svg" style="margin-top: 6px" alt="icon" />
+              <img
+                src="./assets/icon/arrow_forward.svg"
+                style="margin-top: 6px"
+                alt="icon"
+              />
             </span>
           </button>
-          <div class="panel">Tim kami akan membantu anda menyiapkan data-data tersebut</div>
+          <div class="panel">
+            Tim kami akan membantu anda menyiapkan data-data tersebut
+          </div>
         </div>
       </div>
     </div>
@@ -887,12 +1832,21 @@
         <div class="footer__newsletter">
           <div style="flex: 46%">
             <h3>Newsletter</h3>
-            <p>Jadilah yang pertama mendapatkan info terbaru tentang promo dan even dari MyDoit</p>
+            <p>
+              Jadilah yang pertama mendapatkan info terbaru tentang promo dan
+              even dari MyDoit
+            </p>
           </div>
           <div style="flex: 54%">
             <form action="" class="footer__form">
               <img src="./assets/icon/forward_to_inbox.svg" alt="inbox" />
-              <input type="text" name="" id="" class="footer__newsletter_input" placeholder="Kirim Email" />
+              <input
+                type="text"
+                name=""
+                id=""
+                class="footer__newsletter_input"
+                placeholder="Kirim Email"
+              />
               <button class="footer__newsletter_submit">Submit</button>
             </form>
           </div>
@@ -901,9 +1855,18 @@
         <div class="footer__main">
           <div style="flex: 2">
             <div>
-              <img src="./assets/logo/mydoit-corporate-logo-footer.png" class="footer__logo" width="217" height="65" alt="logo mydoit" />
+              <img
+                src="./assets/logo/mydoit-corporate-logo-footer.png"
+                class="footer__logo"
+                width="217"
+                height="65"
+                alt="logo mydoit"
+              />
             </div>
-            <p>MyDoit adalah mitra keuangan percaya pengguna untuk pengelolaan keuangan komprehensif.</p>
+            <p>
+              MyDoit adalah mitra keuangan percaya pengguna untuk pengelolaan
+              keuangan komprehensif.
+            </p>
             <div class="footer__social_media">
               <a href="#">
                 <img src="./assets/icon/facebook-footer.png" alt="facebook" />
@@ -927,7 +1890,10 @@
             <ul>
               <li>
                 <img src="./assets/icon/location_on.svg" alt="location" />
-                <span>Jln. Ringroad Utara No 34 Maguwoharjo Yogyakarta, Indonesia</span>
+                <span
+                  >Jln. Ringroad Utara No 34 Maguwoharjo Yogyakarta,
+                  Indonesia</span
+                >
               </li>
               <li>
                 <img src="./assets/icon/phone.svg" alt="location" />
@@ -949,13 +1915,19 @@
             </ul>
           </div>
         </div>
-        <div class="footer__copyright">Copyright 2023 MyDoit | <a href="#">All Rights Reserved</a> | <a href="#">Policy</a> | <a href="#">Terms of Service</a></div>
+        <div class="footer__copyright">
+          Copyright 2023 MyDoit | <a href="#">All Rights Reserved</a> |
+          <a href="#">Policy</a> | <a href="#">Terms of Service</a>
+        </div>
       </div>
     </footer>
     <!-- Akhir Footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <script src="./main.js" type="module"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>

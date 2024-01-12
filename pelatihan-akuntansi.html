@@ -8,43 +8,87 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./output.css" />
     <!-- Swiper.js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- NavBar Start -->
     <div class="w-full z-[100] font-roboto">
       <nav class="fixed w-full z-[100] top-0 left-0 h-max">
         <div id="navbar" class="w-full bg-white z-[100]">
-          <div class="max-w-[1100px] flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse md:ml-[25px]">
-              <img src="./assets/logo/mydoit-corporate-logo.png" alt="logo mydoit corporate" class="navbar__logo" />
+          <div
+            class="max-w-[1100px] flex flex-wrap items-center justify-between mx-auto p-4"
+          >
+            <a
+              href="/index.html"
+              class="flex items-center space-x-3 rtl:space-x-reverse md:ml-[25px]"
+            >
+              <img
+                src="./assets/logo/mydoit-corporate-logo.png"
+                alt="logo mydoit corporate"
+                class="navbar__logo"
+              />
             </a>
 
             <div class="hidden md:flex flex-wrap items-center gap-[25px]">
               <div class="flex">
-                <a href="/index.html" class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]">Home </a>
+                <a
+                  href="/"
+                  class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]"
+                  >Home
+                </a>
               </div>
 
               <div class="flex">
-                <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" aria-expanded="false" class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]">
+                <button
+                  id="mega-menu-full-dropdown-button"
+                  data-collapse-toggle="mega-menu-full-dropdown"
+                  aria-expanded="false"
+                  class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]"
+                >
                   <div class="flex items-center">
                     <p>Services</p>
-                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
                     </svg>
                   </div>
                 </button>
               </div>
               <div class="flex">
-                <a href="" class="hidden py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]">Blog</a>
+                <a
+                  href=""
+                  class="hidden py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]"
+                  >Blog</a
+                >
               </div>
               <div class="flex">
-                <a href="" class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]">About Us</a>
+                <a
+                  href="./about-us.html"
+                  class="block py-2 pl-3 pr-4 group transition duration-300 text-black hover:text-[#00D27F] font-[500]"
+                  >About Us</a
+                >
               </div>
             </div>
             <div class="hidden md:flex flex-row justify-center items-center">
@@ -65,14 +109,32 @@
               aria-expanded="false"
             >
               <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
               </svg>
             </button>
             <div class="hidden w-full md:w-auto" id="navbar-default">
-              <ul class="flex flex-col p-4 md:p-0 mt-4 font-light border md:justify-between border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-light border md:justify-between border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
+              >
                 <li>
-                  <a href="/index.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 font-[300]">Home</a>
+                  <a
+                    href="/index.html"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 font-[300]"
+                    >Home</a
+                  >
                 </li>
 
                 <li>
@@ -111,8 +173,18 @@
                       aria-controls="dropdown-button-3"
                     >
                       Services
-                      <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                      <svg
+                        class="w-5 h-5 ml-1"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
                       </svg>
                     </button>
                     <div
@@ -125,13 +197,19 @@
                       class="relative lg:absolute left-0 mt-[25px] w-full lg:w-40 rounded-md bg-white shadow-none lg:shadow-s2"
                       id="dropdown-button-3"
                     >
-                      <a href="/akuntansi.html" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
+                      <a
+                        href="/akuntansi.html"
+                        class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
                         >Akuntansi</a
                       >
-                      <a href="/perpajakan.html" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
+                      <a
+                        href="/perpajakan.html"
+                        class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
                         >Perpajakan</a
                       >
-                      <a href="/analisis-bisnis.html" class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
+                      <a
+                        href="/analisis-bisnis.html"
+                        class="flex text-base font-[400] lg:text-sm lg:font-[500] gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left hover:bg-gray-50 disabled:text-gray-500"
                         >Analisis Bisnis</a
                       >
                       <a
@@ -143,10 +221,18 @@
                   </div>
                 </li>
                 <li>
-                  <a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:p-0 font-[300]">Blog</a>
+                  <a
+                    href="/"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:p-0 font-[300]"
+                    >Blog</a
+                  >
                 </li>
                 <li>
-                  <a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:p-0 font-[300]">About Us</a>
+                  <a
+                    href="/"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:p-0 font-[300]"
+                    >About Us</a
+                  >
                 </li>
                 <li class="mt-[10px]">
                   <a
@@ -161,7 +247,7 @@
             </div>
           </div>
         </div>
-        <div id="mega-menu-full-dropdown" class="hidden h-screen p-[30px] mt-[0px] z-40" style="background: rgb(0, 0, 0); background: linear-gradient(34deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.72) 100%)">
+        <!-- <div id="mega-menu-full-dropdown" class="hidden h-screen p-[30px] mt-[0px] z-40" style="background: rgb(0, 0, 0); background: linear-gradient(34deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.72) 100%)">
           <div class="mb-[20px] max-w-[1100px] m-auto rounded-[20px] md:bg-white">
             <div class="flex flex-row max-w-[1100px] px-4 py-5 mx-auto text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]">
               <div class="flex flex-col gap-[10px] w-[50%]">
@@ -218,6 +304,104 @@
               </div>
             </div>
           </div>
+        </div> -->
+        <div
+          id="mega-menu-full-dropdown"
+          class="hidden h-screen p-[30px] mt-[0px] z-40"
+          style="
+            background: rgb(0, 0, 0);
+            background: linear-gradient(
+              34deg,
+              rgba(0, 0, 0, 0.72) 0%,
+              rgba(0, 0, 0, 0.72) 100%
+            );
+          "
+        >
+          <div
+            class="mb-[20px] max-w-[400px] m-auto rounded-[20px] md:bg-white px-4 py-5"
+          >
+            <a href="">
+              <div
+                class="flex flex-row items-center max-w-[400px] px-4 py-5 mx-auto rounded-[20px] hover:bg-slate-300 duration-200 text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]"
+              >
+                <div>
+                  <img
+                    src="assets/icon/akuntansi-dropdown.png"
+                    alt=""
+                    class="min-w-[50px] h-[50px]"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-[600] text-[18px]">Akuntansi</p>
+                  <p class="text-[14px]">
+                    Tim ahli kami memastikan laporan keuangan akurat dan
+                    sistematis
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex flex-row items-center max-w-[400px] px-4 py-5 mx-auto rounded-[20px] hover:bg-slate-300 duration-200 text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]"
+              >
+                <div>
+                  <img
+                    src="assets/icon/analisis-bisnis-dropdown.png"
+                    alt=""
+                    class="min-w-[50px] h-[50px]"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-[600] text-[18px]">Analisis Bisnis</p>
+                  <p class="text-[14px]">
+                    Analisa bisnis mendalam. Wujudkan langkah nyata untuk
+                    keuntungan maksimal
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex flex-row items-center max-w-[400px] px-4 py-5 mx-auto rounded-[20px] hover:bg-slate-300 duration-200 text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]"
+              >
+                <div>
+                  <img
+                    src="assets/icon/perpajakan-dropdown.png"
+                    alt=""
+                    class="min-w-[50px] h-[50px]"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-[600] text-[18px]">Perpajakan</p>
+                  <p class="text-[14px]">
+                    Pelaporan pajak tepat waktu dan optimal dengan tim ahli kami
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="flex flex-row items-center max-w-[400px] px-4 py-5 mx-auto rounded-[20px] hover:bg-slate-300 duration-200 text-gray-900 sm:grid-cols-2 md:px-6 gap-[10px]"
+              >
+                <div>
+                  <img
+                    src="assets/icon/pelatihan-sistem-akutansi-dropdown.png"
+                    alt=""
+                    class="min-w-[50px] h-[50px]"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-[600] text-[18px]">
+                    Pelatihan Sistem Akutansi
+                  </p>
+                  <p class="text-[14px]">
+                    Pelatihan sistem akuntansi untuk digitalisasi dan monitoring
+                    keuangan
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </nav>
     </div>
@@ -225,19 +409,49 @@
 
     <!-- Hero Section Start  -->
     <div class="md:px-[0px]">
-      <div class="bg-[url('/assets/img/hero-background.png')] max-w-full bg-cover bg-no-repeat py-[100px] mb-[40px] md:mt-[40px] rounded-b-[70px]">
+      <div
+        class="bg-[url('/assets/img/hero-background.png')] max-w-full bg-cover bg-no-repeat py-[100px] mb-[40px] md:mt-[40px] rounded-b-[70px]"
+      >
         <div class="flex mx-auto justify-center md:max-w-[1014px]">
-          <div class="flex flex-col justify-center items-center max-w-[95%] md:max-w-[80%] gap-[20px] md:gap-[35px]">
-            <div class="text-center text-white text-[25px] md:text-[42px] font-[700]">
-              <p>Mengasah Keahlian Keuangan dengan Pelatihan <span class="text-[#FBA93E]">Sistem Akutansi Unggulan</span></p>
+          <div
+            class="flex flex-col justify-center items-center max-w-[95%] md:max-w-[80%] gap-[20px] md:gap-[35px]"
+          >
+            <div
+              class="text-center text-white text-[25px] md:text-[42px] font-[700]"
+            >
+              <p>
+                Mengasah Keahlian Keuangan dengan Pelatihan
+                <span class="text-[#FBA93E]">Sistem Akutansi Unggulan</span>
+              </p>
             </div>
-            <div class="text-center text-white text-[15px] md:text-[20px] font-[400]">
-              <p>Mydoit Corporate menyediakan  layanan pelatihan sistem akuntansi. Kami menyediakan solusi lengkap untuk memahami, mengimplementasikan, dan bermigrasi ke sistem akuntansi yang efisien.</p>
+            <div
+              class="text-center text-white text-[15px] md:text-[20px] font-[400]"
+            >
+              <p>
+                Mydoit Corporate menyediakan  layanan pelatihan sistem
+                akuntansi. Kami menyediakan solusi lengkap untuk memahami,
+                mengimplementasikan, dan bermigrasi ke sistem akuntansi yang
+                efisien.
+              </p>
             </div>
             <div class="flex flex-row gap-[20px]">
-              <a href="https://bit.ly/MyDoitService" target="_blank" class="bg-[#00D27F] text-white px-[25px] py-[15px] md:px-[50px] md:py-[16px] rounded-[15px]">Mulai Sekarang</a>
-              <a href="https://wa.me/628879996667?text=Saya%20ingin%20konsultasi" target="_blank" class="bg-white text-[#00D27F] px-[25px] py-[15px] md:px-[50px] md:py-[16px] flex flex-row gap-[10px] rounded-[15px]"
-                ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+              <a
+                href="https://bit.ly/MyDoitService"
+                target="_blank"
+                class="bg-[#00D27F] text-white px-[25px] py-[15px] md:px-[50px] md:py-[16px] rounded-[15px]"
+                >Mulai Sekarang</a
+              >
+              <a
+                href="https://wa.me/628879996667?text=Saya%20ingin%20konsultasi"
+                target="_blank"
+                class="bg-white text-[#00D27F] px-[25px] py-[15px] md:px-[50px] md:py-[16px] flex flex-row gap-[10px] rounded-[15px]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
                   <path
                     d="M12.5 2C18.023 2 22.5 6.477 22.5 12C22.5 17.523 18.023 22 12.5 22C10.7328 22.0029 8.99667 21.5352 7.47001 20.645L2.50401 22L3.85601 17.032C2.96511 15.5049 2.49706 13.768 2.50001 12C2.50001 6.477 6.97701 2 12.5 2ZM9.09201 7.3L8.89201 7.308C8.76254 7.31589 8.63599 7.3499 8.52001 7.408C8.41153 7.46943 8.31251 7.54622 8.22601 7.636C8.10601 7.749 8.03801 7.847 7.96501 7.942C7.59514 8.4229 7.39599 9.01331 7.39901 9.62C7.40101 10.11 7.52901 10.587 7.72901 11.033C8.13801 11.935 8.81101 12.89 9.69901 13.775C9.91301 13.988 10.123 14.202 10.349 14.401C11.4524 15.3725 12.7673 16.073 14.189 16.447L14.757 16.534C14.942 16.544 15.127 16.53 15.313 16.521C15.6043 16.506 15.8886 16.4271 16.146 16.29C16.277 16.2225 16.4048 16.1491 16.529 16.07C16.529 16.07 16.572 16.042 16.654 15.98C16.789 15.88 16.872 15.809 16.984 15.692C17.067 15.606 17.139 15.505 17.194 15.39C17.272 15.227 17.35 14.916 17.382 14.657C17.406 14.459 17.399 14.351 17.396 14.284C17.392 14.177 17.303 14.066 17.206 14.019L16.624 13.758C16.624 13.758 15.754 13.379 15.222 13.137C15.1663 13.1127 15.1067 13.0988 15.046 13.096C14.9776 13.089 14.9085 13.0967 14.8433 13.1186C14.7781 13.1405 14.7183 13.1761 14.668 13.223C14.663 13.221 14.596 13.278 13.873 14.154C13.8315 14.2098 13.7744 14.2519 13.7088 14.2751C13.6433 14.2982 13.5723 14.3013 13.505 14.284C13.4399 14.2665 13.376 14.2445 13.314 14.218C13.19 14.166 13.147 14.146 13.062 14.11C12.4881 13.8595 11.9567 13.5211 11.487 13.107C11.361 12.997 11.244 12.877 11.124 12.761C10.7306 12.3842 10.3877 11.958 10.104 11.493L10.045 11.398C10.0026 11.3342 9.96837 11.2653 9.94301 11.193C9.90501 11.046 10.004 10.928 10.004 10.928C10.004 10.928 10.247 10.662 10.36 10.518C10.47 10.378 10.563 10.242 10.623 10.145C10.741 9.955 10.778 9.76 10.716 9.609C10.436 8.925 10.146 8.244 9.84801 7.568C9.78901 7.434 9.61401 7.338 9.45501 7.319C9.40101 7.313 9.34701 7.307 9.29301 7.303C9.15872 7.29633 9.02415 7.29766 8.89001 7.307L9.09101 7.299L9.09201 7.3Z"
                     fill="#00D27F"
@@ -253,18 +467,40 @@
     <!-- Hero Section End-->
 
     <!-- Mengapa Penting Section Start -->
-    <div class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[110px] w-[95%] md:w-full">
-      <div class="flex flex-col text-center md:max-w-[85%] md:gap-[20px] mb-[30px]">
-        <p class="md:text-[32px] text-[25px] font-[600] [word-spacing:8px] mb-[20px] md:mb-0">Mengapa Pelatihan Sistem Akuntansi <span class="text-[#00A866]"> Penting?</span></p>
-        <p class="md:text-[20px] text-[15px] text-[#606060] font-[400] [word-spacing:5px] md:mb-[20px]">
-          Pemahaman yang mendalam tentang sistem akuntansi adalah kunci untuk keberhasilan keuangan bisnismu. Berikut adalah beberapa alasan mengapa pelatihan sistem akuntansi sangat penting
+    <div
+      class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[110px] w-[95%] md:w-full"
+    >
+      <div
+        class="flex flex-col text-center md:max-w-[85%] md:gap-[20px] mb-[30px]"
+      >
+        <p
+          class="md:text-[32px] text-[25px] font-[600] [word-spacing:8px] mb-[20px] md:mb-0"
+        >
+          Mengapa Pelatihan Sistem Akuntansi
+          <span class="text-[#00A866]"> Penting?</span>
+        </p>
+        <p
+          class="md:text-[20px] text-[15px] text-[#606060] font-[400] [word-spacing:5px] md:mb-[20px]"
+        >
+          Pemahaman yang mendalam tentang sistem akuntansi adalah kunci untuk
+          keberhasilan keuangan bisnismu. Berikut adalah beberapa alasan mengapa
+          pelatihan sistem akuntansi sangat penting
         </p>
       </div>
       <div class="flex md:flex-row flex-col gap-[10px] md:gap-[20px]">
         <div class="flex flex-col gap-[10px] md:gap-[20px]">
-          <div class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
+          <div
+            class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+              >
                 <rect width="60" height="60" rx="10" fill="#32DB98" />
                 <path
                   d="M39.495 19.7598L42.4378 22.741L32.4648 32.8441L25.7412 26.0328C24.9442 25.2254 23.6567 25.2254 22.8597 26.0328L10.5978 38.4753C9.80074 39.2827 9.80074 40.587 10.5978 41.3944C11.3948 42.2019 12.6823 42.2019 13.4793 41.3944L24.2902 30.4218L31.0138 37.2331C31.8108 38.0405 33.0983 38.0405 33.8954 37.2331L45.3194 25.6808L48.2622 28.6621C48.8958 29.3039 49.9993 28.8484 49.9993 27.9375V19.0352C50.0198 18.4555 49.5702 18 48.9979 18H40.2307C39.311 18 38.8614 19.118 39.495 19.7598Z"
@@ -275,13 +511,24 @@
             <div class="flex flex-col gap-[10px]">
               <p class="font-[600] text-[16px]">Efisiensi Operasional</p>
               <p class="text-[14px] text-[#606060] text-justify">
-                Dengan pelatihan efektif, tim akuntansi dapat meningkatkan efisiensi sektor dari operasional, mengoptimalkan penggunaan sistem akuntansi, dan memangkas waktu tugas keuangan rutin.
+                Dengan pelatihan efektif, tim akuntansi dapat meningkatkan
+                efisiensi sektor dari operasional, mengoptimalkan penggunaan
+                sistem akuntansi, dan memangkas waktu tugas keuangan rutin.
               </p>
             </div>
           </div>
-          <div class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
+          <div
+            class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+              >
                 <rect width="60" height="60" rx="10" fill="#32DB98" />
                 <path
                   d="M30 31.8125C32.8525 31.8125 35.3725 32.495 37.42 33.3875C39.31 34.2275 40.5 36.1175 40.5 38.165V39.25C40.5 40.2125 39.7125 41 38.75 41H21.25C20.2875 41 19.5 40.2125 19.5 39.25V38.1825C19.5 36.1175 20.69 34.2275 22.58 33.405C24.6275 32.495 27.1475 31.8125 30 31.8125ZM16 32.25C17.925 32.25 19.5 30.675 19.5 28.75C19.5 26.825 17.925 25.25 16 25.25C14.075 25.25 12.5 26.825 12.5 28.75C12.5 30.675 14.075 32.25 16 32.25ZM17.9775 34.175C17.33 34.07 16.6825 34 16 34C14.2675 34 12.6225 34.3675 11.135 35.015C9.84 35.575 9 36.835 9 38.2525V39.25C9 40.2125 9.7875 41 10.75 41H16.875V38.1825C16.875 36.73 17.2775 35.365 17.9775 34.175ZM44 32.25C45.925 32.25 47.5 30.675 47.5 28.75C47.5 26.825 45.925 25.25 44 25.25C42.075 25.25 40.5 26.825 40.5 28.75C40.5 30.675 42.075 32.25 44 32.25ZM51 38.2525C51 36.835 50.16 35.575 48.865 35.015C47.3775 34.3675 45.7325 34 44 34C43.3175 34 42.67 34.07 42.0225 34.175C42.7225 35.365 43.125 36.73 43.125 38.1825V41H49.25C50.2125 41 51 40.2125 51 39.25V38.2525ZM30 20C32.905 20 35.25 22.345 35.25 25.25C35.25 28.155 32.905 30.5 30 30.5C27.095 30.5 24.75 28.155 24.75 25.25C24.75 22.345 27.095 20 30 20Z"
@@ -290,13 +537,28 @@
               </svg>
             </div>
             <div class="flex flex-col gap-[10px] md:mb-[20px]">
-              <p class="font-[600] text-[16px]">Pemahaman Fungsionalitas Mendalam</p>
-              <p class="text-[14px] text-[#606060] text-justify">Dengan pelatihan komprehensif, setiap anggota timmu akan memiliki pemahaman mendalam tentang fungsi kompleks dalam sistem akuntansi.</p>
+              <p class="font-[600] text-[16px]">
+                Pemahaman Fungsionalitas Mendalam
+              </p>
+              <p class="text-[14px] text-[#606060] text-justify">
+                Dengan pelatihan komprehensif, setiap anggota timmu akan
+                memiliki pemahaman mendalam tentang fungsi kompleks dalam sistem
+                akuntansi.
+              </p>
             </div>
           </div>
-          <div class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
+          <div
+            class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+              >
                 <rect width="60" height="60" rx="10" fill="#32DB98" />
                 <path
                   d="M38.1625 26.9217L28.2575 36.7654C27.575 37.4436 26.4725 37.4436 25.79 36.7654L20.8375 31.8435C20.155 31.1652 20.155 30.0696 20.8375 29.3913C21.52 28.713 22.6225 28.713 23.305 29.3913L27.015 33.0783L35.6775 24.4694C36.36 23.7912 37.4625 23.7912 38.145 24.4694C38.845 25.1477 38.845 26.2434 38.1625 26.9217ZM15.5 30C15.5 25.9477 17.285 22.3129 20.085 19.7737L22.7625 22.4346C23.305 22.9738 24.25 22.5911 24.25 21.8085V14.3475C24.25 13.8605 23.865 13.4779 23.375 13.4779H15.8675C15.08 13.4779 14.695 14.4171 15.255 14.9562L17.6 17.3041C14.17 20.4694 12 24.9738 12 30C12 38.261 17.81 45.1829 25.58 46.9569C26.6825 47.2004 27.75 46.383 27.75 45.2525C27.75 44.4351 27.1725 43.7394 26.3675 43.5481C20.155 42.1394 15.5 36.6088 15.5 30ZM47 30C47 21.739 41.19 14.8171 33.42 13.0431C32.3175 12.7996 31.25 13.617 31.25 14.7475C31.25 15.5649 31.8275 16.2606 32.6325 16.4519C38.845 17.8606 43.5 23.3912 43.5 30C43.5 34.0523 41.715 37.6871 38.915 40.2263L36.2375 37.5654C35.695 37.0262 34.75 37.4089 34.75 38.1915V45.6525C34.75 46.1395 35.135 46.5221 35.625 46.5221H43.1325C43.92 46.5221 44.305 45.5829 43.745 45.0438L41.4 42.6959C44.83 39.5306 47 35.0262 47 30Z"
@@ -306,14 +568,27 @@
             </div>
             <div class="flex flex-col gap-[10px]">
               <p class="font-[600] text-[16px]">Adaptasi Terhadap Perubahan</p>
-              <p class="text-[14px] text-[#606060] text-justify">Dengan pelatihan berkelanjutan, timmu dapat menyesuaikan diri dengan perubahan peraturan pajak, kebijakan bisnis, dan teknologi, menjaga bisnis tetap kompetitif.</p>
+              <p class="text-[14px] text-[#606060] text-justify">
+                Dengan pelatihan berkelanjutan, timmu dapat menyesuaikan diri
+                dengan perubahan peraturan pajak, kebijakan bisnis, dan
+                teknologi, menjaga bisnis tetap kompetitif.
+              </p>
             </div>
           </div>
         </div>
         <div class="flex flex-col gap-[10px] md:gap-[20px]">
-          <div class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
+          <div
+            class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+              >
                 <rect width="60" height="60" rx="10" fill="#32DB98" />
                 <path
                   d="M30.6 28.3611C26.06 27.2139 24.6 26.0278 24.6 24.1806C24.6 22.0611 26.62 20.5833 30 20.5833C32.84 20.5833 34.26 21.6333 34.78 23.3056C35.02 24.0833 35.68 24.6667 36.52 24.6667H37.12C38.44 24.6667 39.38 23.4028 38.92 22.1972C38.08 19.9028 36.12 17.9972 33 17.2583V15.9167C33 14.3028 31.66 13 30 13C28.34 13 27 14.3028 27 15.9167V17.2C23.12 18.0167 20 20.4667 20 24.2194C20 28.7111 23.82 30.9472 29.4 32.25C34.4 33.4167 35.4 35.1278 35.4 36.9361C35.4 38.2778 34.42 40.4167 30 40.4167C26.7 40.4167 25 39.2694 24.34 37.6361C24.04 36.8778 23.36 36.3333 22.54 36.3333H21.98C20.64 36.3333 19.7 37.6556 20.2 38.8611C21.34 41.5639 24 43.1583 27 43.7806V45.0833C27 46.6972 28.34 48 30 48C31.66 48 33 46.6972 33 45.0833V43.8194C36.9 43.1 40 40.9028 40 36.9167C40 31.3944 35.14 29.5083 30.6 28.3611Z"
@@ -323,12 +598,25 @@
             </div>
             <div class="flex flex-col gap-[10px]">
               <p class="font-[600] text-[16px]">Keakuratan Data Keuangan</p>
-              <p class="text-[14px] text-[#606060] text-justify">Pelatihan sistem akuntansi mencegah kesalahan entri data, menjamin keakuratan informasi keuangan, dan membangun dasar kuat untuk pengambilan keputusan tepat.</p>
+              <p class="text-[14px] text-[#606060] text-justify">
+                Pelatihan sistem akuntansi mencegah kesalahan entri data,
+                menjamin keakuratan informasi keuangan, dan membangun dasar kuat
+                untuk pengambilan keputusan tepat.
+              </p>
             </div>
           </div>
-          <div class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
+          <div
+            class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+              >
                 <rect width="60" height="60" rx="10" fill="#32DB98" />
                 <path
                   d="M30.5727 36.0833L35.1382 31.4333C35.6455 30.9167 35.2855 30.0167 34.5655 30.0167H31.6364V16.6667C31.6364 15.75 30.9 15 30 15C29.1 15 28.3636 15.75 28.3636 16.6667V30H25.4345C24.6982 30 24.3382 30.9 24.8618 31.4167L29.4273 36.0667C29.7382 36.4 30.2618 36.4 30.5727 36.0833ZM44.7273 15H36.5291C35.6455 15 34.9091 15.75 34.9091 16.65C34.9091 17.5667 35.6455 18.3 36.5291 18.3H43.0909C43.9909 18.3 44.7273 19.05 44.7273 19.9667V40.0167C44.7273 40.9333 43.9909 41.6833 43.0909 41.6833H16.9091C16.0091 41.6833 15.2727 40.9333 15.2727 40.0167V19.9833C15.2727 19.0667 16.0091 18.3167 16.9091 18.3167H23.4709C24.3545 18.3167 25.0909 17.5667 25.0909 16.6667C25.0909 15.75 24.3545 15 23.4709 15H15.2727C13.4727 15 12 16.5 12 18.3333V41.6667C12 43.5 13.4727 45 15.2727 45H44.7273C46.5273 45 48 43.5 48 41.6667V18.3333C48 16.5 46.5273 15 44.7273 15Z"
@@ -338,12 +626,25 @@
             </div>
             <div class="flex flex-col gap-[10px]">
               <p class="font-[600] text-[16px]">Kepatuhan dan Keamanan</p>
-              <p class="text-[14px] text-[#606060] text-justify">Sistem akuntansi yang dikelola dengan baik membantu memastikan kepatuhan terhadap regulasi keuangan dan melindungi data keuangan bisnismu dari ancaman keamanan.</p>
+              <p class="text-[14px] text-[#606060] text-justify">
+                Sistem akuntansi yang dikelola dengan baik membantu memastikan
+                kepatuhan terhadap regulasi keuangan dan melindungi data
+                keuangan bisnismu dari ancaman keamanan.
+              </p>
             </div>
           </div>
-          <div class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
+          <div
+            class="flex flex-row gap-[10px] items-center border border-[#D2D2D2] px-[30px] py-[15px] rounded-[20px]"
+            style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+          >
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+              >
                 <rect width="60" height="60" rx="10" fill="#32DB98" />
                 <path
                   d="M50.3333 23.6667C50.3333 25.6833 48.6833 27.3333 46.6667 27.3333C46.3367 27.3333 46.025 27.2967 45.7317 27.205L39.205 33.7133C39.2967 34.0067 39.3333 34.3367 39.3333 34.6667C39.3333 36.6833 37.6833 38.3333 35.6667 38.3333C33.65 38.3333 32 36.6833 32 34.6667C32 34.3367 32.0367 34.0067 32.1283 33.7133L27.4533 29.0383C27.16 29.13 26.83 29.1667 26.5 29.1667C26.17 29.1667 25.84 29.13 25.5467 29.0383L17.205 37.3983C17.2967 37.6917 17.3333 38.0033 17.3333 38.3333C17.3333 40.35 15.6833 42 13.6667 42C11.65 42 10 40.35 10 38.3333C10 36.3167 11.65 34.6667 13.6667 34.6667C13.9967 34.6667 14.3083 34.7033 14.6017 34.795L22.9617 26.4533C22.87 26.16 22.8333 25.83 22.8333 25.5C22.8333 23.4833 24.4833 21.8333 26.5 21.8333C28.5167 21.8333 30.1667 23.4833 30.1667 25.5C30.1667 25.83 30.13 26.16 30.0383 26.4533L34.7133 31.1283C35.0067 31.0367 35.3367 31 35.6667 31C35.9967 31 36.3267 31.0367 36.62 31.1283L43.1283 24.6017C43.0367 24.3083 43 23.9967 43 23.6667C43 21.65 44.65 20 46.6667 20C48.6833 20 50.3333 21.65 50.3333 23.6667ZM50.3333 23.6667C50.3333 25.6833 48.6833 27.3333 46.6667 27.3333C46.3367 27.3333 46.025 27.2967 45.7317 27.205L39.205 33.7133C39.2967 34.0067 39.3333 34.3367 39.3333 34.6667C39.3333 36.6833 37.6833 38.3333 35.6667 38.3333C33.65 38.3333 32 36.6833 32 34.6667C32 34.3367 32.0367 34.0067 32.1283 33.7133L27.4533 29.0383C27.16 29.13 26.83 29.1667 26.5 29.1667C26.17 29.1667 25.84 29.13 25.5467 29.0383L17.205 37.3983C17.2967 37.6917 17.3333 38.0033 17.3333 38.3333C17.3333 40.35 15.6833 42 13.6667 42C11.65 42 10 40.35 10 38.3333C10 36.3167 11.65 34.6667 13.6667 34.6667C13.9967 34.6667 14.3083 34.7033 14.6017 34.795L22.9617 26.4533C22.87 26.16 22.8333 25.83 22.8333 25.5C22.8333 23.4833 24.4833 21.8333 26.5 21.8333C28.5167 21.8333 30.1667 23.4833 30.1667 25.5C30.1667 25.83 30.13 26.16 30.0383 26.4533L34.7133 31.1283C35.0067 31.0367 35.3367 31 35.6667 31C35.9967 31 36.3267 31.0367 36.62 31.1283L43.1283 24.6017C43.0367 24.3083 43 23.9967 43 23.6667C43 21.65 44.65 20 46.6667 20C48.6833 20 50.3333 21.65 50.3333 23.6667Z"
@@ -353,7 +654,11 @@
             </div>
             <div class="flex flex-col gap-[10px]">
               <p class="font-[600] text-[16px]">Peningkatan Produktivitas</p>
-              <p class="text-[14px] text-[#606060] text-justify">Keterampilan yang diperoleh melalui dalam pelatihan sistem akuntansi dapat menghasilkan peningkatan produktivitas, karena timmu dapat bekerja lebih cerdas dan efektif.</p>
+              <p class="text-[14px] text-[#606060] text-justify">
+                Keterampilan yang diperoleh melalui dalam pelatihan sistem
+                akuntansi dapat menghasilkan peningkatan produktivitas, karena
+                timmu dapat bekerja lebih cerdas dan efektif.
+              </p>
             </div>
           </div>
         </div>
@@ -363,30 +668,50 @@
 
     <!-- Sistem Section Start -->
     <div class="bg-[#FAF8F8] mb-[30px] mt-[30px]">
-      <div class="flex md:max-w-[1014px] mx-auto flex-col md:mt-[90px] justify-center py-[50px]">
-        <p class="md:text-[32px] text-[25px] font-[600] [word-spacing:8px] mb-[20px] md:mb-0 text-center">Sistem Aplikasi Yang <span class="text-[#00A866]">Didukung</span></p>
-        <div class="flex flex-row md:flex-col justify-center gap-[30px] md:mt-[30px]">
+      <div
+        class="flex md:max-w-[1014px] mx-auto flex-col md:mt-[90px] justify-center py-[50px]"
+      >
+        <p
+          class="md:text-[32px] text-[25px] font-[600] [word-spacing:8px] mb-[20px] md:mb-0 text-center"
+        >
+          Sistem Aplikasi Yang <span class="text-[#00A866]">Didukung</span>
+        </p>
+        <div
+          class="flex flex-row md:flex-col justify-center gap-[30px] md:mt-[30px]"
+        >
           <div class="flex flex-col md:flex-row md:justify-between gap-[30px]">
             <div class="flex flex-col gap-[10px] items-center justify-center">
-              <div class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]" style="height: 120px; width: 120px; font-size: 170px">
+              <div
+                class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]"
+                style="height: 120px; width: 120px; font-size: 170px"
+              >
                 <img src="assets/img/accurate.png" alt="" />
               </div>
               <p class="font-[600] text-[22px]">Accurate</p>
             </div>
             <div class="flex flex-col gap-[10px] items-center justify-center">
-              <div class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]" style="height: 120px; width: 120px; font-size: 170px">
+              <div
+                class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]"
+                style="height: 120px; width: 120px; font-size: 170px"
+              >
                 <img src="assets/img/jurnal.png" alt="" />
               </div>
               <p class="font-[600] text-[22px]">Jurnal</p>
             </div>
             <div class="flex flex-col gap-[10px] items-center justify-center">
-              <div class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]" style="height: 120px; width: 120px; font-size: 170px">
+              <div
+                class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]"
+                style="height: 120px; width: 120px; font-size: 170px"
+              >
                 <img src="assets/img/kido.png" alt="" />
               </div>
               <p class="font-[600] text-[22px]">Kledo</p>
             </div>
             <div class="flex flex-col gap-[10px] items-center justify-center">
-              <div class="font-bold text-gray-700 rounded-full bg-white flex p-[10px] items-center justify-center border-[15px] border-[#D9D9D9]" style="height: 120px; width: 120px; font-size: 170px">
+              <div
+                class="font-bold text-gray-700 rounded-full bg-white flex p-[10px] items-center justify-center border-[15px] border-[#D9D9D9]"
+                style="height: 120px; width: 120px; font-size: 170px"
+              >
                 <img src="assets/img/sap.png" alt="" />
               </div>
               <p class="font-[600] text-[22px]">SAP</p>
@@ -394,25 +719,37 @@
           </div>
           <div class="flex flex-col md:flex-row md:justify-between gap-[30px]">
             <div class="flex flex-col gap-[10px] items-center justify-center">
-              <div class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]" style="height: 120px; width: 120px; font-size: 170px">
+              <div
+                class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]"
+                style="height: 120px; width: 120px; font-size: 170px"
+              >
                 <img src="assets/img/myob.png" alt="" />
               </div>
               <p class="font-[600] text-[22px]">MYOB</p>
             </div>
             <div class="flex flex-col gap-[10px] items-center justify-center">
-              <div class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]" style="height: 120px; width: 120px; font-size: 170px">
+              <div
+                class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]"
+                style="height: 120px; width: 120px; font-size: 170px"
+              >
                 <img src="assets/img/xero.png" alt="" />
               </div>
               <p class="font-[600] text-[22px]">Xero</p>
             </div>
             <div class="flex flex-col gap-[10px] items-center justify-center">
-              <div class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]" style="height: 120px; width: 120px; font-size: 170px">
+              <div
+                class="font-bold text-gray-700 rounded-full bg-white flex p-[5px] items-center justify-center border-[15px] border-[#D9D9D9]"
+                style="height: 120px; width: 120px; font-size: 170px"
+              >
                 <img src="assets/img/zoho.png" alt="" />
               </div>
               <p class="font-[600] text-[22px]">Zohobooks</p>
             </div>
             <div class="flex flex-col gap-[10px] items-center justify-center">
-              <div class="font-bold text-gray-700 rounded-full bg-white flex p-[10px] items-center justify-center border-[15px] border-[#D9D9D9]" style="height: 120px; width: 120px; font-size: 170px">
+              <div
+                class="font-bold text-gray-700 rounded-full bg-white flex p-[10px] items-center justify-center border-[15px] border-[#D9D9D9]"
+                style="height: 120px; width: 120px; font-size: 170px"
+              >
                 <img src="assets/img/odoo.png" alt="" />
               </div>
               <p class="font-[600] text-[22px]">Odoo</p>
@@ -425,20 +762,76 @@
     <!-- Sistem Section End -->
 
     <!-- Layanan Section Start -->
-    <div class="flex flex-col md:max-w-[1014px] mx-auto justify-center md:mt-[90px] mb-[30px]">
-      <div class="flex flex-row items-center md:gap-[30px] gap-[5px] overflow-hidden md:mb-[60px] mb-[30px] mx-auto">
-        <svg class="hidden md:flex" xmlns="http://www.w3.org/2000/svg" width="262" height="2" viewBox="0 0 262 2" fill="none">
-          <path d="M1 1L261 0.999977" stroke="#252525" stroke-width="2" stroke-linecap="round" />
+    <div
+      class="flex flex-col md:max-w-[1014px] mx-auto justify-center md:mt-[90px] mb-[30px]"
+    >
+      <div
+        class="flex flex-row items-center md:gap-[30px] gap-[5px] overflow-hidden md:mb-[60px] mb-[30px] mx-auto"
+      >
+        <svg
+          class="hidden md:flex"
+          xmlns="http://www.w3.org/2000/svg"
+          width="262"
+          height="2"
+          viewBox="0 0 262 2"
+          fill="none"
+        >
+          <path
+            d="M1 1L261 0.999977"
+            stroke="#252525"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
         </svg>
-        <svg class="flex md:hidden" xmlns="http://www.w3.org/2000/svg" width="50" height="2" viewBox="0 0 262 2" fill="none">
-          <path d="M1 1L261 0.999977" stroke="#252525" stroke-width="4" stroke-linecap="round" />
+        <svg
+          class="flex md:hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="2"
+          viewBox="0 0 262 2"
+          fill="none"
+        >
+          <path
+            d="M1 1L261 0.999977"
+            stroke="#252525"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
         </svg>
-        <p class="md:text-[32px] text-[25px] font-[600] [word-spacing:8px] mb-[20px] md:mb-0 text-center mt-[12px] md:mt-0">Kenali <span class="text-[#00A866]">Layanan Kami</span></p>
-        <svg class="hidden md:flex" xmlns="http://www.w3.org/2000/svg" width="262" height="2" viewBox="0 0 262 2" fill="none">
-          <path d="M1 1H261" stroke="#00A866" stroke-width="2" stroke-linecap="round" />
+        <p
+          class="md:text-[32px] text-[25px] font-[600] [word-spacing:8px] mb-[20px] md:mb-0 text-center mt-[12px] md:mt-0"
+        >
+          Kenali <span class="text-[#00A866]">Layanan Kami</span>
+        </p>
+        <svg
+          class="hidden md:flex"
+          xmlns="http://www.w3.org/2000/svg"
+          width="262"
+          height="2"
+          viewBox="0 0 262 2"
+          fill="none"
+        >
+          <path
+            d="M1 1H261"
+            stroke="#00A866"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
         </svg>
-        <svg class="flex md:hidden" xmlns="http://www.w3.org/2000/svg" width="50" height="2" viewBox="0 0 262 2" fill="none">
-          <path d="M1 1H261" stroke="#00A866" stroke-width="4" stroke-linecap="round" />
+        <svg
+          class="flex md:hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="2"
+          viewBox="0 0 262 2"
+          fill="none"
+        >
+          <path
+            d="M1 1H261"
+            stroke="#00A866"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
         </svg>
       </div>
       <div class="flex flex-col md:flex-row items-center gap-[20px]">
@@ -449,32 +842,58 @@
             <div class="bg-[#32DB98] text-wrap rounded-[10px] text-[30px] text-white px-[20px] py-[5px]">3</div>
             <div class="absolute border-[2px] border-dashed border-[#32DB98] h-[260px]"></div>
           </div> -->
-          <div class="absolute flex border-[2px] border-dashed border-[#32DB98] h-[460px] md:h-[360px] md:mt-[40px] mt-[100px] md:ml-[25px] ml-[25px] -z-10"></div>
+          <div
+            class="absolute flex border-[2px] border-dashed border-[#32DB98] h-[460px] md:h-[360px] md:mt-[40px] mt-[100px] md:ml-[25px] ml-[25px] -z-10"
+          ></div>
           <div class="flex flex-col gap-[40px]">
             <div class="flex flex-row items-center gap-[20px]">
-              <div class="bg-[#32DB98] text-wrap rounded-[10px] text-[20px] text-white px-[23px] py-[10px]">1</div>
+              <div
+                class="bg-[#32DB98] text-wrap rounded-[10px] text-[20px] text-white px-[23px] py-[10px]"
+              >
+                1
+              </div>
               <div class="flex flex-col">
-                <p class="text-[20px] font-[600]">Implementasi dan Migrasi Sistem Akuntansi</p>
+                <p class="text-[20px] font-[600]">
+                  Implementasi dan Migrasi Sistem Akuntansi
+                </p>
                 <p class="text-[#606060] text-[15px]">
-                  Mendapatkan bantuan sama mentor profesional dalam mengimplementasikan sistem akuntansi baru atau bermigrasi dari sistem yang sudah ada. Tim ahli kami akan memastikan transisi yang mulus dan efisien.
+                  Mendapatkan bantuan sama mentor profesional dalam
+                  mengimplementasikan sistem akuntansi baru atau bermigrasi dari
+                  sistem yang sudah ada. Tim ahli kami akan memastikan transisi
+                  yang mulus dan efisien.
                 </p>
               </div>
             </div>
             <div class="flex flex-row items-center gap-[20px]">
-              <div class="bg-[#32DB98] text-wrap rounded-[10px] text-[20px] text-white px-[20px] py-[10px]">2</div>
+              <div
+                class="bg-[#32DB98] text-wrap rounded-[10px] text-[20px] text-white px-[20px] py-[10px]"
+              >
+                2
+              </div>
               <div class="flex flex-col">
                 <p class="text-[20px] font-[600]">Pelatihan Sistem Akuntansi</p>
                 <p class="text-[#606060] text-[15px]">
-                  Pelatihan sistem akuntansi dengan kursus yang disesuaikan. Kamu akan dapat memaksimalkan potensi perangkat lunak akuntansimu dengan pelatihan kami mulai dari konsep, konsultasi, pengumpulan data saldo awal, setting
-                  database awal, pelatihan dan pendampingan serta implementasi
+                  Pelatihan sistem akuntansi dengan kursus yang disesuaikan.
+                  Kamu akan dapat memaksimalkan potensi perangkat lunak
+                  akuntansimu dengan pelatihan kami mulai dari konsep,
+                  konsultasi, pengumpulan data saldo awal, setting database
+                  awal, pelatihan dan pendampingan serta implementasi
                 </p>
               </div>
             </div>
             <div class="flex flex-row items-center gap-[20px]">
-              <div class="bg-[#32DB98] text-wrap rounded-[10px] text-[20px] text-white px-[20px] py-[10px]">3</div>
+              <div
+                class="bg-[#32DB98] text-wrap rounded-[10px] text-[20px] text-white px-[20px] py-[10px]"
+              >
+                3
+              </div>
               <div class="flex flex-col">
                 <p class="text-[20px] font-[600]">Migrasi Sistem Keuangan</p>
-                <p class="text-[#606060] text-[15px]">Kami juga menyediakan layanan migrasi sistem keuangan untuk memastikan bahwa data keuanganmu terkelola dengan baik dan tetap aman selama proses migrasi.</p>
+                <p class="text-[#606060] text-[15px]">
+                  Kami juga menyediakan layanan migrasi sistem keuangan untuk
+                  memastikan bahwa data keuanganmu terkelola dengan baik dan
+                  tetap aman selama proses migrasi.
+                </p>
               </div>
             </div>
           </div>
@@ -484,26 +903,50 @@
         </div>
       </div>
       <div class="flex items-center justify-center mt-[30px]">
-        <a href="https://bit.ly/MyDoitService" class="flex justify-center bg-[#00D27F] text-white px-[25px] py-[15px] md:px-[50px] md:py-[16px] rounded-[15px] w-[95%] md:w-[400px] text-center">Bergabung Sekarang</a>
+        <a
+          href="https://bit.ly/MyDoitService"
+          class="flex justify-center bg-[#00D27F] text-white px-[25px] py-[15px] md:px-[50px] md:py-[16px] rounded-[15px] w-[95%] md:w-[400px] text-center"
+          >Bergabung Sekarang</a
+        >
       </div>
     </div>
     <!-- Layanan Section End -->
 
     <!-- Why Us Section Start -->
-    <div class="flex flex-col md:max-w-[1014px] w-[95%] mx-auto justify-center items-center mb-[40px] md:mb-[90px] md:mt-[90px]">
-      <p class="md:text-[32px] text-[25px] font-[600] [word-spacing:8px] mb-[20px] md:mb-[30px] text-center">Mengapa Memilih <span class="text-[#00A866]">Kami</span></p>
+    <div
+      class="flex flex-col md:max-w-[1014px] w-[95%] mx-auto justify-center items-center mb-[40px] md:mb-[90px] md:mt-[90px]"
+    >
+      <p
+        class="md:text-[32px] text-[25px] font-[600] [word-spacing:8px] mb-[20px] md:mb-[30px] text-center"
+      >
+        Mengapa Memilih <span class="text-[#00A866]">Kami</span>
+      </p>
       <div class="flex flex-col md:flex-row justify-between gap-[20px]">
-        <div class="bg-[#007E4C] rounded-[20px] pb-[5px] md:w-1/3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
-          <div class="flex flex-col bg-white mt-[-2px] rounded-[20px] px-[20px] py-[20px] justify-center gap-[30px]">
+        <div
+          class="bg-[#007E4C] rounded-[20px] pb-[5px] md:w-1/3"
+          style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+        >
+          <div
+            class="flex flex-col bg-white mt-[-2px] rounded-[20px] px-[20px] py-[20px] justify-center gap-[30px]"
+          >
             <div class="flex justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="71" height="54" viewBox="0 0 71 54" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="71"
+                height="54"
+                viewBox="0 0 71 54"
+                fill="none"
+              >
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M50.7422 30.8137C55.101 33.9525 58.1553 38.205 58.1553 43.875V54H67.7001C69.4499 54 70.8817 52.4812 70.8817 50.625V43.875C70.8817 36.5175 59.5234 32.1637 50.7422 30.8137Z"
                   fill="#64E4B1"
                 />
-                <path d="M26.3279 27C33.3565 27 39.0543 20.9559 39.0543 13.5C39.0543 6.04416 33.3565 0 26.3279 0C19.2994 0 13.6016 6.04416 13.6016 13.5C13.6016 20.9559 19.2994 27 26.3279 27Z" fill="#64E4B1" />
+                <path
+                  d="M26.3279 27C33.3565 27 39.0543 20.9559 39.0543 13.5C39.0543 6.04416 33.3565 0 26.3279 0C19.2994 0 13.6016 6.04416 13.6016 13.5C13.6016 20.9559 19.2994 27 26.3279 27Z"
+                  fill="#64E4B1"
+                />
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -519,13 +962,27 @@
               </svg>
             </div>
             <div class="flex flex-col gap-[10px] mt-[10px]">
-              <p class="text-center text-[20px] font-[600]">Ahli di Bidangnya</p>
-              <p class="text-[#606060] text-justify text-[14px]">Tim kami terdiri dari para ahli yang berpengalaman dalam implementasi sistem akuntansi dan migrasi sistem keuangan.</p>
+              <p class="text-center text-[20px] font-[600]">
+                Ahli di Bidangnya
+              </p>
+              <p class="text-[#606060] text-justify text-[14px]">
+                Tim kami terdiri dari para ahli yang berpengalaman dalam
+                implementasi sistem akuntansi dan migrasi sistem keuangan.
+              </p>
             </div>
             <div class="hidden mb-[15px]">
-              <a href="" class="text-[#00D27F] font-[600] flex flex-row items-center gap-[10px]">
+              <a
+                href=""
+                class="text-[#00D27F] font-[600] flex flex-row items-center gap-[10px]"
+              >
                 <p>Learn More</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="14"
+                  viewBox="0 0 20 14"
+                  fill="none"
+                >
                   <path
                     d="M12.1585 0.303018C11.7803 0.717676 11.7803 1.38751 12.1585 1.80216L15.9115 5.9381L1.20023 5.93811C0.66686 5.93811 0.230468 6.41656 0.230468 7.00133C0.230468 7.5861 0.66686 8.06455 1.20023 8.06455L15.9115 8.06455L12.1488 12.1899C11.7706 12.6045 11.7706 13.2744 12.1488 13.689C12.527 14.1037 13.138 14.1037 13.5162 13.689L18.9468 7.74558C19.325 7.33093 19.325 6.6611 18.9468 6.24644L13.5259 0.303018C13.1477 -0.101007 12.527 -0.101007 12.1585 0.303018Z"
                     fill="#00D27F"
@@ -535,10 +992,21 @@
             </div>
           </div>
         </div>
-        <div class="bg-[#007E4C] rounded-[20px] pb-[5px] md:w-1/3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
-          <div class="flex flex-col bg-white mt-[-2px] rounded-[20px] px-[20px] py-[20px] justify-center gap-[30px]">
+        <div
+          class="bg-[#007E4C] rounded-[20px] pb-[5px] md:w-1/3"
+          style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+        >
+          <div
+            class="flex flex-col bg-white mt-[-2px] rounded-[20px] px-[20px] py-[20px] justify-center gap-[30px]"
+          >
             <div class="flex justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="51" height="54" viewBox="0 0 51 54" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="51"
+                height="54"
+                viewBox="0 0 51 54"
+                fill="none"
+              >
                 <path
                   d="M3.37891 10.8C2.00391 10.8 0.878906 12.015 0.878906 13.5V48.6C0.878906 51.57 3.12891 54 5.87891 54H38.3789C39.7539 54 40.8789 52.785 40.8789 51.3C40.8789 49.815 39.7539 48.6 38.3789 48.6H8.37891C7.00391 48.6 5.87891 47.385 5.87891 45.9V13.5C5.87891 12.015 4.75391 10.8 3.37891 10.8ZM45.8789 0H15.8789C13.1289 0 10.8789 2.43 10.8789 5.4V37.8C10.8789 40.77 13.1289 43.2 15.8789 43.2H45.8789C48.6289 43.2 50.8789 40.77 50.8789 37.8V5.4C50.8789 2.43 48.6289 0 45.8789 0ZM40.8789 24.3H20.8789C19.5039 24.3 18.3789 23.085 18.3789 21.6C18.3789 20.115 19.5039 18.9 20.8789 18.9H40.8789C42.2539 18.9 43.3789 20.115 43.3789 21.6C43.3789 23.085 42.2539 24.3 40.8789 24.3ZM30.8789 35.1H20.8789C19.5039 35.1 18.3789 33.885 18.3789 32.4C18.3789 30.915 19.5039 29.7 20.8789 29.7H30.8789C32.2539 29.7 33.3789 30.915 33.3789 32.4C33.3789 33.885 32.2539 35.1 30.8789 35.1ZM40.8789 13.5H20.8789C19.5039 13.5 18.3789 12.285 18.3789 10.8C18.3789 9.315 19.5039 8.1 20.8789 8.1H40.8789C42.2539 8.1 43.3789 9.315 43.3789 10.8C43.3789 12.285 42.2539 13.5 40.8789 13.5Z"
                   fill="#64E4B1"
@@ -546,13 +1014,27 @@
               </svg>
             </div>
             <div class="flex flex-col gap-[10px] mt-[10px]">
-              <p class="text-center text-[20px] font-[600]">Kursus Disesuaikan</p>
-              <p class="text-[#606060] text-justify text-[14px] mb-[20px]">Kursus kami disesuaikan dengan kebutuhan bisnismu, supaya kamu bisa fokus pada hal yang paling relevan.</p>
+              <p class="text-center text-[20px] font-[600]">
+                Kursus Disesuaikan
+              </p>
+              <p class="text-[#606060] text-justify text-[14px] mb-[20px]">
+                Kursus kami disesuaikan dengan kebutuhan bisnismu, supaya kamu
+                bisa fokus pada hal yang paling relevan.
+              </p>
             </div>
             <div class="hidden mb-[15px]">
-              <a href="" class="text-[#00D27F] font-[600] flex flex-row items-center gap-[10px]">
+              <a
+                href=""
+                class="text-[#00D27F] font-[600] flex flex-row items-center gap-[10px]"
+              >
                 <p>Learn More</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="14"
+                  viewBox="0 0 20 14"
+                  fill="none"
+                >
                   <path
                     d="M12.1585 0.303018C11.7803 0.717676 11.7803 1.38751 12.1585 1.80216L15.9115 5.9381L1.20023 5.93811C0.66686 5.93811 0.230468 6.41656 0.230468 7.00133C0.230468 7.5861 0.66686 8.06455 1.20023 8.06455L15.9115 8.06455L12.1488 12.1899C11.7706 12.6045 11.7706 13.2744 12.1488 13.689C12.527 14.1037 13.138 14.1037 13.5162 13.689L18.9468 7.74558C19.325 7.33093 19.325 6.6611 18.9468 6.24644L13.5259 0.303018C13.1477 -0.101007 12.527 -0.101007 12.1585 0.303018Z"
                     fill="#00D27F"
@@ -562,10 +1044,21 @@
             </div>
           </div>
         </div>
-        <div class="bg-[#007E4C] rounded-[20px] pb-[5px] md:w-1/3" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)">
-          <div class="flex flex-col bg-white mt-[-5px] rounded-[20px] px-[20px] py-[20px] justify-center gap-[30px]">
+        <div
+          class="bg-[#007E4C] rounded-[20px] pb-[5px] md:w-1/3"
+          style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
+        >
+          <div
+            class="flex flex-col bg-white mt-[-5px] rounded-[20px] px-[20px] py-[20px] justify-center gap-[30px]"
+          >
             <div class="flex justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="55" height="57" viewBox="0 0 55 57" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="55"
+                height="57"
+                viewBox="0 0 55 57"
+                fill="none"
+              >
                 <path
                   d="M13.0289 56.4696H3.57891C2.09391 56.4696 0.878906 55.0694 0.878906 53.358V22.2428C0.878906 20.5315 2.09391 19.1313 3.57891 19.1313H13.0289C14.5139 19.1313 15.7289 20.5315 15.7289 22.2428V53.358C15.7289 55.0694 14.5139 56.4696 13.0289 56.4696ZM32.6039 0.462158H23.1539C21.6689 0.462158 20.4539 1.86234 20.4539 3.57368V53.358C20.4539 55.0694 21.6689 56.4696 23.1539 56.4696H32.6039C34.0889 56.4696 35.3039 55.0694 35.3039 53.358V3.57368C35.3039 1.86234 34.0889 0.462158 32.6039 0.462158ZM52.1789 25.3543H42.7289C41.2439 25.3543 40.0289 26.7545 40.0289 28.4659V53.358C40.0289 55.0694 41.2439 56.4696 42.7289 56.4696H52.1789C53.6639 56.4696 54.8789 55.0694 54.8789 53.358V28.4659C54.8789 26.7545 53.6639 25.3543 52.1789 25.3543Z"
                   fill="#64E4B1"
@@ -573,13 +1066,27 @@
               </svg>
             </div>
             <div class="flex flex-col gap-[10px] mt-[10px]">
-              <p class="text-center text-[20px] font-[600]">Dukungan Purna Jual</p>
-              <p class="text-[#606060] text-justify text-[14px] mb-[20px]">Dukungan purna jual kami memastikan sistem akuntansimu tetap lancar pasca implementasi atau migrasi.</p>
+              <p class="text-center text-[20px] font-[600]">
+                Dukungan Purna Jual
+              </p>
+              <p class="text-[#606060] text-justify text-[14px] mb-[20px]">
+                Dukungan purna jual kami memastikan sistem akuntansimu tetap
+                lancar pasca implementasi atau migrasi.
+              </p>
             </div>
             <div class="hidden mb-[15px]">
-              <a href="" class="text-[#00D27F] font-[600] flex flex-row items-center gap-[10px]">
+              <a
+                href=""
+                class="text-[#00D27F] font-[600] flex flex-row items-center gap-[10px]"
+              >
                 <p>Learn More</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="14"
+                  viewBox="0 0 20 14"
+                  fill="none"
+                >
                   <path
                     d="M12.1585 0.303018C11.7803 0.717676 11.7803 1.38751 12.1585 1.80216L15.9115 5.9381L1.20023 5.93811C0.66686 5.93811 0.230468 6.41656 0.230468 7.00133C0.230468 7.5861 0.66686 8.06455 1.20023 8.06455L15.9115 8.06455L12.1488 12.1899C11.7706 12.6045 11.7706 13.2744 12.1488 13.689C12.527 14.1037 13.138 14.1037 13.5162 13.689L18.9468 7.74558C19.325 7.33093 19.325 6.6611 18.9468 6.24644L13.5259 0.303018C13.1477 -0.101007 12.527 -0.101007 12.1585 0.303018Z"
                     fill="#00D27F"
@@ -594,9 +1101,17 @@
     <!-- Why Us Section End -->
 
     <!-- Hubungi Kami Section Start -->
-    <div class="flex flex-col md:max-w-[1014px] w-[95%] mb-[50px] m-auto bg-[url('/assets/img/texture.png')] bg-cover bg-no-repeat text-white justify-center py-[40px] px-[20px] md:py-[90px] md:px-[120px] rounded-[20px]">
-      <p class="text-center text-[40px] font-[600]">Hubungi Kami <span class="text-[#FBA93E]">Sekarang</span></p>
-      <p class="text-[15px] text-center mb-[50px] mt-[20px]">Jika kamu tertarik atau memiliki pertanyaan lebih lanjut, jangan ragu untuk menghubungi kami. Tim kami siap membantumu meraih kesuksesan dengan sistem akuntansi yang efektif.</p>
+    <div
+      class="flex flex-col md:max-w-[1014px] w-[95%] mb-[50px] m-auto bg-[url('/assets/img/texture.png')] bg-cover bg-no-repeat text-white justify-center py-[40px] px-[20px] md:py-[90px] md:px-[120px] rounded-[20px]"
+    >
+      <p class="text-center text-[40px] font-[600]">
+        Hubungi Kami <span class="text-[#FBA93E]">Sekarang</span>
+      </p>
+      <p class="text-[15px] text-center mb-[50px] mt-[20px]">
+        Jika kamu tertarik atau memiliki pertanyaan lebih lanjut, jangan ragu
+        untuk menghubungi kami. Tim kami siap membantumu meraih kesuksesan
+        dengan sistem akuntansi yang efektif.
+      </p>
       <div class="flex justify-center">
         <a
           href="https://wa.me/628879996667?text=Saya%20ingin%20konsultasi"
@@ -604,7 +1119,13 @@
           class="w-[200px] px-[30px] py-[20px] flex flex-row gap-[5px] bg-[#00D27F] rounded-[15px] text-white justify-center items-center text-center"
           style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+          >
             <path
               d="M2.5 22L3.91152 16.8691C3.04422 15.3639 2.58876 13.6568 2.59099 11.9196C2.58095 6.44549 7.02644 2 12.49 2C15.1417 2 17.6315 3.02806 19.5062 4.9034C20.4303 5.82266 21.1627 6.91616 21.6611 8.12054C22.1595 9.32492 22.4139 10.6162 22.4096 11.9196C22.4096 17.3832 17.9641 21.8287 12.5 21.8287C10.8368 21.8287 9.21374 21.4151 7.76204 20.6192L2.5 22ZM7.99424 18.8349L8.29675 19.0162C9.56649 19.7676 11.0146 20.1644 12.49 20.1654C17.0264 20.1654 20.7263 16.4662 20.7263 11.9291C20.7263 9.73176 19.8696 7.65554 18.3168 6.1034C17.5533 5.33553 16.6453 4.72636 15.6453 4.31101C14.6452 3.89565 13.5728 3.68232 12.49 3.68331C7.94343 3.6839 4.24476 7.38316 4.24476 11.9202C4.24476 13.4724 4.67843 14.995 5.50502 16.3055L5.69645 16.618L4.85982 19.662L7.99483 18.8354L7.99424 18.8349Z"
               fill="white"
@@ -628,12 +1149,21 @@
         <div class="footer__newsletter">
           <div style="flex: 46%">
             <h3>Newsletter</h3>
-            <p>Jadilah yang pertama mendapatkan info terbaru tentang promo dan even dari MyDoit</p>
+            <p>
+              Jadilah yang pertama mendapatkan info terbaru tentang promo dan
+              even dari MyDoit
+            </p>
           </div>
           <div style="flex: 54%">
             <form action="" class="footer__form">
               <img src="./assets/icon/forward_to_inbox.svg" alt="inbox" />
-              <input type="text" name="" id="" class="footer__newsletter_input" placeholder="Kirim Email" />
+              <input
+                type="text"
+                name=""
+                id=""
+                class="footer__newsletter_input"
+                placeholder="Kirim Email"
+              />
               <button class="footer__newsletter_submit">Submit</button>
             </form>
           </div>
@@ -642,9 +1172,18 @@
         <div class="footer__main">
           <div style="flex: 2">
             <div>
-              <img src="./assets/logo/mydoit-corporate-logo-footer.png" class="footer__logo" width="217" height="65" alt="logo mydoit" />
+              <img
+                src="./assets/logo/mydoit-corporate-logo-footer.png"
+                class="footer__logo"
+                width="217"
+                height="65"
+                alt="logo mydoit"
+              />
             </div>
-            <p>MyDoit adalah mitra keuangan percaya pengguna untuk pengelolaan keuangan komprehensif.</p>
+            <p>
+              MyDoit adalah mitra keuangan percaya pengguna untuk pengelolaan
+              keuangan komprehensif.
+            </p>
             <div class="footer__social_media">
               <a href="#">
                 <img src="./assets/icon/facebook-footer.png" alt="facebook" />
@@ -668,7 +1207,10 @@
             <ul>
               <li>
                 <img src="./assets/icon/location_on.svg" alt="location" />
-                <span>Jln. Ringroad Utara No 34 Maguwoharjo Yogyakarta, Indonesia</span>
+                <span
+                  >Jln. Ringroad Utara No 34 Maguwoharjo Yogyakarta,
+                  Indonesia</span
+                >
               </li>
               <li>
                 <img src="./assets/icon/phone.svg" alt="location" />
@@ -690,13 +1232,19 @@
             </ul>
           </div>
         </div>
-        <div class="footer__copyright">Copyright 2023 MyDoit | <a href="#">All Rights Reserved</a> | <a href="#">Policy</a> | <a href="#">Terms of Service</a></div>
+        <div class="footer__copyright">
+          Copyright 2023 MyDoit | <a href="#">All Rights Reserved</a> |
+          <a href="#">Policy</a> | <a href="#">Terms of Service</a>
+        </div>
       </div>
     </footer>
     <!-- Akhir Footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <script src="./main.js" type="module"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
