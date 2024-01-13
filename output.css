@@ -1445,6 +1445,10 @@ input:checked + .toggle-bg {
   width: 50%;
 }
 
+.w-\[85\%\] {
+  width: 85%;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
@@ -1461,8 +1465,40 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
-.w-\[85\%\] {
-  width: 85%;
+.w-\[\] {
+  width: ;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[49\%\] {
+  width: 49%;
+}
+
+.w-\[\%\] {
+  width: %;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-\[15\%\] {
+  width: 15%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .min-w-\[50px\] {
@@ -1661,6 +1697,10 @@ input:checked + .toggle-bg {
 
 .gap-\[80px\] {
   gap: 80px;
+}
+
+.gap-\[1px\] {
+  gap: 1px;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2033,6 +2073,11 @@ input:checked + .toggle-bg {
   padding-right: 23px;
 }
 
+.px-\[24px\] {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .px-\[25px\] {
   padding-left: 25px;
   padding-right: 25px;
@@ -2154,6 +2199,10 @@ input:checked + .toggle-bg {
   padding-left: 2rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -2164,14 +2213,6 @@ input:checked + .toggle-bg {
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
 }
 
 .text-left {
@@ -2263,6 +2304,10 @@ input:checked + .toggle-bg {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[50px\] {
+  font-size: 50px;
 }
 
 .font-\[300\] {
@@ -5409,6 +5454,10 @@ button {
     gap: 50px;
   }
 
+  .md\:gap-\[15px\] {
+    gap: 15px;
+  }
+
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -5490,6 +5539,16 @@ button {
   .md\:py-\[90px\] {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+
+  .md\:px-\[24px\] {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:pb-\[110px\] {
@@ -5594,6 +5653,12 @@ button {
   .lg\:hover\:bg-white:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:gap-\[15px\] {
+    gap: 15px;
   }
 }
 
