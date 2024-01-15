@@ -1142,11 +1142,6 @@ input:checked + .toggle-bg {
   margin-right: auto;
 }
 
-.my-\[150px\] {
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
-
 .my-\[50px\] {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -1174,10 +1169,6 @@ input:checked + .toggle-bg {
 
 .mb-\[10px\] {
   margin-bottom: 10px;
-}
-
-.mb-\[150px\] {
-  margin-bottom: 150px;
 }
 
 .mb-\[15px\] {
@@ -1312,8 +1303,8 @@ input:checked + .toggle-bg {
   margin-top: 90px;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-\[90px\] {
+  margin-bottom: 90px;
 }
 
 .block {
