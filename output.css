@@ -1199,6 +1199,10 @@ input:checked + .toggle-bg {
   margin-bottom: 60px;
 }
 
+.mb-\[90px\] {
+  margin-bottom: 90px;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -1271,10 +1275,6 @@ input:checked + .toggle-bg {
   margin-top: 12px;
 }
 
-.mt-\[150px\] {
-  margin-top: 150px;
-}
-
 .mt-\[20px\] {
   margin-top: 20px;
 }
@@ -1301,10 +1301,6 @@ input:checked + .toggle-bg {
 
 .mt-\[90px\] {
   margin-top: 90px;
-}
-
-.mb-\[90px\] {
-  margin-bottom: 90px;
 }
 
 .block {
@@ -1646,6 +1642,10 @@ input:checked + .toggle-bg {
   gap: 20px;
 }
 
+.gap-\[24px\] {
+  gap: 24px;
+}
+
 .gap-\[25px\] {
   gap: 25px;
 }
@@ -1700,6 +1700,10 @@ input:checked + .toggle-bg {
 
 .rounded-\[20px\] {
   border-radius: 20px;
+}
+
+.rounded-\[5px\] {
+  border-radius: 5px;
 }
 
 .rounded-full {
@@ -5416,6 +5420,10 @@ button {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:rounded-\[15px\] {
+    border-radius: 15px;
   }
 
   .md\:border-0 {
