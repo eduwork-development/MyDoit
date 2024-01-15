@@ -1160,6 +1160,10 @@ input:checked + .toggle-bg {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-\[-30px\] {
   margin-bottom: -30px;
 }
@@ -1437,6 +1441,10 @@ input:checked + .toggle-bg {
   width: 16rem;
 }
 
+.w-\[15\%\] {
+  width: 15%;
+}
+
 .w-\[200px\] {
   width: 200px;
 }
@@ -1463,42 +1471,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-\[49\%\] {
-  width: 49%;
-}
-
-.w-\[\%\] {
-  width: %;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[20\%\] {
-  width: 20%;
-}
-
-.w-\[15\%\] {
-  width: 15%;
-}
-
-.w-\[70\%\] {
-  width: 70%;
 }
 
 .min-w-\[50px\] {
@@ -1699,10 +1671,6 @@ input:checked + .toggle-bg {
   gap: 80px;
 }
 
-.gap-\[1px\] {
-  gap: 1px;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1799,6 +1767,10 @@ input:checked + .toggle-bg {
 
 .border-\[2px\] {
   border-width: 2px;
+}
+
+.border-b-\[2px\] {
+  border-bottom-width: 2px;
 }
 
 .border-dashed {
@@ -2073,11 +2045,6 @@ input:checked + .toggle-bg {
   padding-right: 23px;
 }
 
-.px-\[24px\] {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
 .px-\[25px\] {
   padding-left: 25px;
   padding-right: 25px;
@@ -2304,10 +2271,6 @@ input:checked + .toggle-bg {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-\[50px\] {
-  font-size: 50px;
 }
 
 .font-\[300\] {
@@ -5454,10 +5417,6 @@ button {
     gap: 50px;
   }
 
-  .md\:gap-\[15px\] {
-    gap: 15px;
-  }
-
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -5494,6 +5453,11 @@ button {
   .md\:px-\[120px\] {
     padding-left: 120px;
     padding-right: 120px;
+  }
+
+  .md\:px-\[24px\] {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .md\:px-\[25px\] {
@@ -5539,16 +5503,6 @@ button {
   .md\:py-\[90px\] {
     padding-top: 90px;
     padding-bottom: 90px;
-  }
-
-  .md\:px-\[24px\] {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .md\:pb-\[110px\] {
