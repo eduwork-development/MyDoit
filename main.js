@@ -1,4 +1,4 @@
-import "./style.css";
+import "./output.css";
 const swiper_client = new Swiper(".swiper_pengguna", {
   loop: true,
   centeredSlides: true,
