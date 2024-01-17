@@ -8,12 +8,30 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./output.css" />
     <!-- Swiper.js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      /* Teks dengan Gradien dari atas ke bawah */
+      .gradient-text {
+        background: linear-gradient(to bottom, #00a866, #025d39);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    </style>
   </head>
   <body>
     <!-- NavBar Start -->
@@ -403,26 +421,46 @@
 
     <!-- Hero Section Start  -->
     <div class="md:px-[0px]">
-      <div class="bg-[url('/assets/img/hero-background.png')] max-w-full bg-cover bg-no-repeat py-[100px] md:py-[150px] rounded-b-[70px]">
-        <div class="flex md:flex-row flex-col mx-auto justify-between md:max-w-[1014px] items-center w-[95%] md:w-full md:mb-[-40px]">
-          <div class="flex flex-col md:w-[50%] gap-[30px] justify-center">
-            <div class="text-center md:text-start text-white text-[25px] md:text-[42px] font-[700]">
-              <p><span class="text-[#FBA93E]">Solusi Pajak</span> yang Efisien, Akurat, dan Tanpa Ribet untuk Bisnis</p>
+      <div
+        class="max-w-full bg-cover py-[100px] md:pt-[150px] md:pb-[110px] rounded-b-[70px]"
+      >
+        <div
+          class="flex md:flex-row flex-col mx-auto justify-between md:max-w-[1014px] items-center w-[95%] md:w-full md:mb-[-40px]"
+        >
+          <div class="flex flex-col md:w-[40%] gap-[30px] justify-center">
+            <div class="text-center md:text-start">
+              <p
+                class="font-playfair font-[400] text-[40px] md:text-[60px] italic gradient-text"
+              >
+                Solusi Pajak
+              </p>
+              <p class="font-[600] text-[30px] md:text-[40px] md:leading-[56px]">
+                yang Efisien, Akurat & Tanpa Ribet untuk Bisnis
+              </p>
             </div>
-            <div class="text-center md:text-start text-white text-[15px] md:text-[20px] font-[400]">
-              <p>Mydoit Corporate menyediakan berbagai layanan pajak untuk memastikan urusan keuanganmu teratur. Tim ahli kami berdedikasi untuk membantu individu dan bisnis dalam menavigasi kompleksitas sistem pajak Indonesia.</p>
+            <div
+              class="text-center md:text-start text-[15px] md:text-[20px] font-[400]"
+            >
+              <p class="md:leading-[32px] text-justify">
+                Mydoit Corporate menyediakan berbagai layanan pajak untuk
+                memastikan urusan keuanganmu teratur. Tim ahli kami berdedikasi
+                untuk membantu individu dan bisnis dalam menavigasi kompleksitas
+                sistem pajak Indonesia.
+              </p>
             </div>
-             <div class="flex flex-row gap-[24px] font-[600] mx-auto md:mx-0">
+            <div
+              class="flex flex-row gap-[24px] justify-center md:justify-between font-[600]"
+            >
               <a
                 href="https://bit.ly/MyDoitService"
                 target="_blank"
-                class="bg-[#00D27F] text-white px-[15px] py-[10px] md:px-[50px] md:py-[16px] rounded-[5px] md:rounded-[15px]"
+                class="bg-[#00D27F] shadow-xl text-white text-center px-[15px] py-[10px] md:px-[35px] md:py-[16px] rounded-[5px] md:rounded-[15px]"
                 >Mulai Sekarang</a
               >
               <a
                 href="https://wa.me/628879996667?text=Saya%20ingin%20konsultasi"
                 target="_blank"
-                class="bg-white text-[#00D27F] px-[15px] py-[10px] md:px-[50px] md:py-[16px] flex flex-row gap-[10px] rounded-[5px] md:rounded-[15px]"
+                class="bg-white shadow-xl text-[#00D27F] text-center px-[15px] py-[10px] md:px-[35px] md:py-[16px] flex flex-row gap-[10px] rounded-[5px] md:rounded-[15px] border-customPrimary-500 border"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -439,8 +477,14 @@
               >
             </div>
           </div>
-          <div class="flex flex-col justify-center items-center mx-auto">
-            <img src="assets/img/bg-perpajakan.png" alt="" class="md:max-h-[900px] w-auto max-h-[300px] mt-[20px] md:mt-0 md:relative md:left-[50px]" />
+          <div
+            class="flex flex-col justify-center items-center mt-[40px] md:mt-0 mx-auto md:w-[60%]"
+          >
+            <img
+              src="assets/img/perpajakan/image.png"
+              alt=""
+              class="md:max-h-[900px] w-auto max-h-[300px] mt-[20px] md:mt-0 md:relative md:left-[50px]"
+            />
           </div>
         </div>
       </div>
@@ -448,41 +492,78 @@
     <!-- Hero Section End-->
 
     <!-- Mengapa Penting Section Start -->
-    <div class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[110px] w-[95%] md:w-full">
-      <div class="flex md:flex-row flex-col gap-[10px] md:gap-[20px] items-center mt-[-20px] md:mt-0">
-        <div class="md:w-[40%] w-[90%] mb-[20px] md:mb-0">
-          <img src="assets/img/perpajakann.png" alt="" />
+    <div
+      class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[110px] w-[95%] md:w-full"
+    >
+      <div
+        class="flex md:flex-row flex-col gap-[10px] md:gap-[40px] items-center mt-[-20px] md:mt-0"
+      >
+        <div class="md:w-[30%] w-[90%] mb-[20px] md:mb-0">
+          <img src="assets/img/perpajakan/taxes.png" alt="" />
         </div>
-        <div class="flex flex-col md:w-[60%] mt-[-20px] md:mt-0">
-          <p class="text-[17px] md:text-[20px] md:mb-[30px] mb-[20px] text-justify">
-            Baru punya NPWP? Atau sudah punya NPWP tapi merasa kesulitan dalam memenuhi kewajiban perpajakan? Sudahkah memiliki tim untuk melakukan pembukuan dan pengurusan pajak? Tim kami akan menangani kewajiban perpajakan perusahaan anda
-            dari awal hingga tuntas
+        <div class="flex flex-col md:w-[70%] mt-[-20px] md:mt-0">
+          <p
+            class="text-[16px] md:text-[18px] md:mb-[30px] mb-[20px] text-justify"
+          >
+            Baru punya NPWP? Atau sudah punya NPWP tapi merasa kesulitan dalam
+            memenuhi kewajiban perpajakan? Sudahkah memiliki tim untuk melakukan
+            pembukuan dan pengurusan pajak? Tim kami akan menangani kewajiban
+            perpajakan perusahaan anda dari awal hingga tuntas
           </p>
-          <a href="https://bit.ly/MyDoitService" target="_blank" class="bg-[#00D27F] text-center text-white px-[25px] py-[15px] md:px-[50px] md:py-[16px] rounded-[15px]">Hubungi Kami</a>
+          <a
+            href="https://bit.ly/MyDoitService"
+            target="_blank"
+            class="bg-[#00D27F] text-center text-white px-[25px] py-[15px] md:px-[50px] md:py-[16px] rounded-[15px]"
+            >Hubungi Kami</a
+          >
         </div>
       </div>
     </div>
     <!-- Mengapa Penitng Section End -->
 
     <!-- Mengapa Harus Memakai Section Start -->
-    <div class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[110px] w-[95%] md:w-full">
-      <div class="flex flex-col text-center md:max-w-[85%] md:gap-[20px] mb-[30px]">
-        <p class="md:text-[42px] text-[25px] font-[600] md:font-[800] [word-spacing:8px] mb-[20px] md:mb-0">Mengapa harus mengelola pajak dengan <span class="text-[#00D27F]"> Mydoit</span> <span class="text-[#FBA93E]">Corporate?</span></p>
+    <div
+      class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[110px] w-[95%] md:w-full"
+    >
+      <div
+        class="flex flex-col text-center md:max-w-[85%] md:gap-[20px] mb-[30px]"
+      >
+        <p
+          class="md:text-[36px] text-[25px] [word-spacing:8px] mb-[20px] md:mb-0"
+        >
+          Mengapa harus mengelola pajak dengan
+          <span
+            class="text-customPrimary-600 font-[600] md:font-[700] md:text-[64px]"
+          >
+            Mydoit Corporate?</span
+          >
+        </p>
       </div>
-      <div class="flex md:flex-row flex-col gap-[30px] md:gap-[30px] items-center mt-[-20px] md:mt-0">
+      <div
+        class="flex md:flex-row flex-col gap-[30px] md:gap-[30px] items-center mt-[-20px] md:mt-0"
+      >
         <div class="flex flex-col gap-[30px]">
           <div class="flex flex-row items-center">
             <img src="assets/img/efisien.png" alt="" />
             <div class="">
               <p class="md:text-[24px] font-[600]">Efisien</p>
-              <p class="md:text-[18px] text-[13px] font-[300] text-[#606060] text-justify">Fokus pada aktivitas bisnis yang lebih strategis dan memastikan pembayaran dan pelaporan pajak dilakukan tepat waktu</p>
+              <p
+                class="md:text-[18px] text-[13px] font-[300] text-[#606060] text-justify"
+              >
+                Fokus pada aktivitas bisnis yang lebih strategis dan memastikan
+                pembayaran dan pelaporan pajak dilakukan tepat waktu
+              </p>
             </div>
           </div>
           <div class="flex flex-row items-center">
             <img src="assets/img/profesional.png" alt="" />
             <div class="">
               <p class="md:text-[24px] font-[600]">Profesional</p>
-              <p class="md:text-[18px] text-[13px] font-[300] text-[#606060] text-justify">Tenaga profesional untuk memenuhi kewajiban perpajakan anda</p>
+              <p
+                class="md:text-[18px] text-[13px] font-[300] text-[#606060] text-justify"
+              >
+                Tenaga profesional untuk memenuhi kewajiban perpajakan anda
+              </p>
             </div>
           </div>
         </div>
@@ -491,14 +572,23 @@
             <img src="assets/img/hemat.png" alt="" />
             <div class="">
               <p class="md:text-[24px] font-[600]">Hemat biaya tenaga kerja</p>
-              <p class="md:text-[18px] text-[13px] font-[300] text-[#606060] text-justify">Harga layanan lebih murah dibandingkan perekrutan tenaga kerja in house untuk meningkatkan efisiensi tenaga kerja.</p>
+              <p
+                class="md:text-[18px] text-[13px] font-[300] text-[#606060] text-justify"
+              >
+                Harga layanan lebih murah dibandingkan perekrutan tenaga kerja
+                in house untuk meningkatkan efisiensi tenaga kerja.
+              </p>
             </div>
           </div>
           <div class="flex flex-row items-center">
             <img src="assets/img/rhs.png" alt="" />
             <div class="">
               <p class="md:text-[24px] font-[600]">Kerahasiaan data</p>
-              <p class="md:text-[18px] text-[13px] font-[300] text-[#606060] text-justify">Kami memastikan keamanan data anda terjamin</p>
+              <p
+                class="md:text-[18px] text-[13px] font-[300] text-[#606060] text-justify"
+              >
+                Kami memastikan keamanan data anda terjamin
+              </p>
             </div>
           </div>
         </div>
@@ -506,226 +596,464 @@
     </div>
     <!-- Mengapa Harus Memakai Section End -->
 
-    <div class="flex flex-col text-center md:max-w-[85%] md:gap-[20px] mb-[-30px] md:mb-[30px] mx-auto md:mt-[120px] mt-[60px]">
-      <p class="md:text-[42px] text-[25px] font-[800] md:font-[800] [word-spacing:8px] mb-[20px] md:mb-0">Layanan Perpajakan <span class="text-[#00D27F]"> Mydoit</span> <span class="text-[#FBA93E]">Corporate?</span></p>
-    </div>
-    <!-- Layanan Section Start -->
-    <div class="md:py-[10px] py-[30px] my-[50px] bg-cover bg-no-repeat" style="background-image: linear-gradient(64deg, rgba(0, 84, 51, 0.75) 0%, rgba(0, 84, 51, 0.75) 100%), url('assets/img/bg-layananakun.png')">
-      <div class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[60px] w-[95%] md:w-full md:gap-[40px] gap-[10px]">
-        <div class="flex flex-col md:flex-row text-white gap-[20px] md:gap-[40px] md:mb-0 mb-[30px]">
-          <p class="text-[36px] font-[600] md:w-[40%] text-center md:text-justify">SPT PPH badan</p>
-          <p class="text-[17px] font-[400] text-center md:text-justify">Konsultasi, hitung dan lapor kewajiban perpajakan badan secara berkala per masa dan tahunan</p>
+    <div
+      class="bg-[url('/assets/img/perpajakan/background.png')] bg-center md:bg-top bg-cover bg-no-repeat py-6 mt-[60px] md:mt-[110px] rounded-t-[80px] max-w-full md:w-full"
+    >
+      <div class="mx-auto md:max-w-[1014px] w-[90%] md:w-full">
+        <div class="text-center mx-auto mt-[40px] md:mt-[110px]">
+          <p class="md:text-[48px] md:leading-[80.64 px] text-[25px]">
+            Layanan Perpajakan <br /><span
+              class="font-[700] md:text-[64px] text-[30px] text-customPrimary-600"
+              >Mydoit Corporate?</span
+            >
+          </p>
         </div>
-
-        <div class="flex flex-col md:flex-row md:gap-[30px] gap-[10px]">
-          <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-            <div class="flex justify-start items-center">
-              <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
+        <div class="md:mt-[110px] mt-[40px]">
+          <div
+            class="md:flex flex-row gap-[90px] md:text-start text-center mb-[40px] md:justify-between"
+          >
+            <div
+              class="flex-col font-[700] text-[36px] md:w-[49.5%] text-customPrimary-500 mb-[30px]"
+            >
+              SPT PPH Badan
             </div>
-            <div>
-              <p class="text-[22px] font-[700] mb-[20px]">Hitung dan Lapor SPT PPh Badan</p>
-              <p class="text-[#606060] text-justify">Perhitungan dan Pelaporan SPT Tahunan Tarif Pajak Umum bagi Perusahaan</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-            <div class="flex justify-start items-center">
-              <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
-            </div>
-            <div>
-              <p class="text-[22px] font-[700] mb-[20px]">PPH 21</p>
-              <p class="text-[#606060] text-justify md:mt-[50px]">Pajak yang dipotong atas pekerjaan dari suatu perusahaan</p>
+            <div class="flex-col text-[20px] text-[#606060]">
+              Konsultasi, hitung dan lapor kewajiban perpajakan badan secara
+              berkala per masa dan tahunan
             </div>
           </div>
-          <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-            <div class="flex justify-start items-center">
-              <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
-            </div>
-            <div>
-              <p class="text-[22px] font-[700] mb-[20px]">PPH22</p>
-              <p class="text-[#606060] text-justify md:mt-[50px]">Pajak yang dikenakan pada bendahara atau badan-badan tertentu, baik milik pemerintah maupun swasta yang melakukan kegiatan perdagangan ekspor, impor dan re-impor</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-col md:flex-row md:gap-[30px] gap-[10px]">
-          <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-            <div class="flex justify-start items-center">
-              <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
-            </div>
-            <div>
-              <p class="text-[22px] font-[700] mb-[20px]">PPH23</p>
-              <p class="text-[#606060] text-justify">Pajak atas penghasilan yang diperoleh dari modal, penyerahan jasa, atau penyelenggaraan kegiatan selain yang dipotong dalam Pajak Penghasilan Pasal 21</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-            <div class="flex justify-start items-center">
-              <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
-            </div>
-            <div>
-              <p class="text-[22px] font-[700] mb-[20px]">PPH 25</p>
-              <p class="text-[#606060] text-justify">Angsuran pajak yang harus dibayar pada setiap masa pajak</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-            <div class="flex justify-start items-center">
-              <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
-            </div>
-            <div>
-              <p class="text-[22px] font-[700] mb-[20px]">PPH 26</p>
-              <p class="text-[#606060] text-justify">Pajak yang dikenakan atas penghasilan yang diterima wajib pajak luar negeri dari Indonesia</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          id="buttonviewmore"
-          onclick="view()"
-          class="bg-[#00D27F] border border-[#00D27F] text-center justify-center text-white text-[14px] hover:border hover:border-[#00D27F] hover:bg-white hover:text-[#00D27F] px-[25px] py-[15px] md:px-[50px] md:py-[12px] flex flex-row gap-[10px] rounded-[15px] duration-200"
-        >
-          <button>Selengkapnya</button>
-        </div>
-
-        <div id="viewmore" class="hidden flex-col md:gap-[30px] gap-[10px]">
-          <div class="flex flex-col md:flex-row md:gap-[30px] gap-[10px]">
-            <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-              <div class="flex justify-start items-center">
-                <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
+          <div class="grid md:grid-cols-3 grid-cols-1 gap-[25px]">
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon1.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
               </div>
-              <div>
-                <p class="text-[22px] font-[700] mb-[20px]">PPH 29</p>
-                <p class="text-[#606060] text-justify">
-                  Pajak Penghasilan (PPh) kurang bayar yang terdapat dalam SPT Tahunan PPh yaitu sisa dari PPh yang terutang dalam tahun pajak yang bersangkutan dikurangi dengan kredit PPh (PPh Pasal 21, 22 dan 23) dan PPh Pasal 25)
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">
+                  Hitung dan Lapor SPT PPh Badan
+                </p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Perhitungan dan Pelaporan SPT Tahunan Tarif Pajak Umum bagi
+                  Perusahaan
                 </p>
               </div>
             </div>
-            <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-              <div class="flex justify-start items-center">
-                <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon2.png"
+                  alt=""
+                  class="md:w-[25%] w-50%"
+                />
               </div>
-              <div>
-                <p class="text-[22px] font-[700] mb-[20px]">Pasal 4 Ayat 2</p>
-                <p class="text-[#606060] text-justify">Pajak penghasilan final untuk perusahaan konstruksi dan pajak lain yang tidak dapat dikreditkan di SPT Tahunan</p>
-              </div>
-            </div>
-            <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-              <div class="flex justify-start items-center">
-                <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
-              </div>
-              <div>
-                <p class="text-[22px] font-[700] mb-[20px]">PPh Final UMKM</p>
-                <p class="text-[#606060] text-justify">Pajak penghasilan final bagi UMKM yang memiliki omset dibawah 4,8 M</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col md:flex-row gap-[30px]">
-            <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-              <div class="flex justify-start items-center">
-                <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
-              </div>
-              <div>
-                <p class="text-[22px] font-[700] mb-[20px]">Penerbitan eFaktur</p>
-                <p class="text-[#606060] text-justify md:mt-[50px]">Faktur pajak PPN pada setiap transaksi Barang atau Jasa Kena Pajak</p>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">PPH 21</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Pajak yang dipotong atas pekerjaan dari suatu perusahaan
+                </p>
               </div>
             </div>
-            <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-              <div class="flex justify-start items-center">
-                <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon2.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
               </div>
-              <div>
-                <p class="text-[22px] font-[700] mb-[20px]">Tax Planning</p>
-                <p class="text-[#606060] text-justify md:mt-[50px]">Layanan perencanaan pajak kolaboratif untuk mengoptimalkan strategi keuangan kamu dan meminimalkan kewajiban pajak</p>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">PPH 22</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  pajak yang dikenakan pada bendahara atau badan-badan tertentu,
+                  baik milik pemerintah maupun swasta yang melakukan kegiatan
+                  perdagangan ekspor, impor dan re-impor
+                </p>
               </div>
             </div>
-            <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[33%] gap-[20px]">
-              <div class="flex justify-start items-center">
-                <img src="assets/img/icon1.png" alt="" class="md:w-[30%]" />
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon2.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
               </div>
-              <div>
-                <p class="text-[22px] font-[700] mb-[20px]">Pembuatan NPWP Badan</p>
-                <p class="text-[#606060] text-justify">Memudahkan bisnismu dalam mendapatkan dan mengelola Nomor Pokok Wajib Pajak (NPWP) patuh terhadap hukum pajak Indonesia.</p>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">PPH 23</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Pajak atas penghasilan yang diperoleh dari modal, penyerahan
+                  jasa, atau penyelenggaraan kegiatan selain yang dipotong dalam
+                  Pajak Penghasilan Pasal 21
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon2.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">PPH 25</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Angsuran pajak yang harus dibayar pada setiap masa pajak
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon2.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">PPH 26</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Pajak yang dikenakan atas penghasilan yang diterima wajib
+                  pajak luar negeri dari Indonesia
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon2.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">PPH 29</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Pajak Penghasilan (PPh) kurang bayar yang terdapat dalam SPT
+                  Tahunan PPh yaitu sisa dari PPh yang terutang dalam tahun
+                  pajak yang bersangkutan dikurangi dengan kredit PPh (PPh Pasal
+                  21, 22 dan 23) dan PPh Pasal 25
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon3.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">Pasal 4 Ayat 2</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Pajak penghasilan final untuk perusahaan konstruksi dan pajak
+                  lain yang tidak dapat dikreditkan di SPT Tahunan
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon2.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">PPh Final UMKM</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Pajak penghasilan final bagi UMKM yang memiliki omset dibawah
+                  4,8 M
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon4.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">
+                  Penerbitan eFaktur
+                </p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Faktur pajak PPN pada setiap transaksi Barang atau Jasa Kena
+                  Pajak
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon5.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">Tax Planning</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Layanan perencanaan pajak kolaboratif untuk mengoptimalkan
+                  strategi keuangan kamu dan meminimalkan kewajiban pajak
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon6.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">
+                  Pembuatan NPWP Badan
+                </p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Memudahkan bisnismu dalam mendapatkan dan mengelola Nomor
+                  Pokok Wajib Pajak (NPWP) patuh terhadap hukum pajak Indonesia.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div
-          id="buttonviewless"
-          onclick="view2()"
-          class="hidden bg-[#00D27F] border border-[#00D27F] text-center justify-center text-white text-[14px] hover:border hover:border-[#00D27F] hover:bg-white hover:text-[#00D27F] px-[25px] py-[15px] md:px-[50px] md:py-[12px] flex-row gap-[10px] rounded-[15px] duration-200"
-        >
-          <button>View Less</button>
+        <div class="md:mt-[110px] mt-[40px]">
+          <div
+            class="md:flex flex-row gap-[90px] md:text-start text-center mb-[40px]"
+          >
+            <div
+              class="flex-col font-[700] text-[36px] md:w-[49.5%] text-customPrimary-500 mb-[30px]"
+            >
+              SPT PPH Pribadi
+            </div>
+            <div class="flex-col text-[20px] text-[#606060]">
+              Konsultasi, hitung dan lapor kewajiban perpajakan pribadi secara
+              berkala per masa dan tahunan
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-[25px]">
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon1.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">SPT PPh Pribadi</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Pajak orang pribadi termasuk formulir SPT
+                  1770SS, 1770 S dan 1770
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon2.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">
+                  Pembuatan NPWP Pribadi
+                </p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Bantuan tanpa ribet dalam mendapatkan dan mengelola Nomor
+                  Pokok Wajib Pajak (NPWP) kamu untuk memastikan kepatuhan
+                  terhadap hukum pajak Indonesia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:mt-[110px] mt-[40px]">
+          <div
+            class="md:flex flex-row gap-[90px] md:text-start text-center mb-[40px]"
+          >
+            <div
+              class="flex-col font-[700] text-[36px] md:w-[49.5%] text-customPrimary-500 mb-[30px]"
+            >
+              SPT PPN
+            </div>
+            <div class="flex-col text-[20px] text-[#606060]">
+              Hitung dan Lapor SPT PPN sesuai dengan pemeriksaan faktur pajak
+              penjualan dan pembelian
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-[25px]">
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon1.png"
+                  alt=""
+                  class="md:w-[25%] w-50%"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">SPT PPN</p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Hitung dan Laporkan Pajak Pertambahan Nilai bagi Wajib Pajak
+                  yang telah dikukuhkan sebagai Pengusaha Kena Pajak (PKP)
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-[15px] p-[24px] gap-24px shadow-lg border-[1px] border-[#D9D9D9]"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center mb-[24px]"
+              >
+                <img
+                  src="assets/img/perpajakan/icon2.png"
+                  alt=""
+                  class="md:w-[25%] w-[50%]"
+                />
+              </div>
+              <div class="justify-start items-center">
+                <p class="mb-[40px] font-[700] text-[24px]">
+                  Pembuatan NPWP Pribadi
+                </p>
+                <p
+                  class="leading-[25.6px] text-[14px] text-justify"
+                  style="color: #606060"
+                >
+                  Faktur pajak PPN pada setiap transaksi Barang atau Jasa Kena
+                  Pajak
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Layanan Section End -->
-
-    <!-- Layanan2 Section Start -->
-    <div class="md:py-[30px] py-[30px] my-[50px] bg-cover bg-no-repeat" style="background-image: linear-gradient(64deg, rgba(0, 84, 51, 0.75) 0%, rgba(0, 84, 51, 0.75) 100%), url('assets/img/bg-layananakun.png')">
-      <div class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[20px] w-[95%] md:w-full md:gap-[40px] gap-[30px]">
-        <div class="flex flex-col md:flex-row text-white gap-[20px] md:gap-[40px]">
-          <p class="text-[36px] font-[600] md:w-[40%] text-center md:text-justify">SPT PPH Pribadi</p>
-          <p class="text-[17px] font-[400] text-center md:text-justify">Konsultasi, hitung dan lapor kewajiban perpajakan pribadi secara berkala per masa dan tahunan</p>
-        </div>
-
-        <div class="flex flex-col md:flex-row md:gap-[30px] gap-[10px]">
-          <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[50%] gap-[20px]">
-            <div class="flex justify-start items-center">
-              <img src="assets/img/icon1.png" alt="" class="md:w-[20%]" />
-            </div>
-            <div>
-              <p class="text-[22px] font-[700] mb-[20px]">SPT PPh pribadi</p>
-              <p class="text-[#606060] text-justify">Pajak orang pribadi termasuk formulir SPT 1770SS, 1770 S dan 1770</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[50%] gap-[20px]">
-            <div class="flex justify-start items-center">
-              <img src="assets/img/icon1.png" alt="" class="md:w-[20%]" />
-            </div>
-            <div>
-              <p class="text-[22px] font-[700] mb-[20px]">Pembuatan NPWP Pribadi</p>
-              <p class="text-[#606060] text-justify">Bantuan tanpa ribet dalam mendapatkan dan mengelola Nomor Pokok Wajib Pajak (NPWP) kamu untuk memastikan kepatuhan terhadap hukum pajak Indonesia.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Layanan2 Section End -->
-
-    <!-- Layanan3 Section Start -->
-    <div class="md:py-[30px] py-[30px] my-[50px] bg-cover bg-no-repeat" style="background-image: linear-gradient(64deg, rgba(0, 84, 51, 0.75) 0%, rgba(0, 84, 51, 0.75) 100%), url('assets/img/bg-layananakun.png')">
-      <div class="flex flex-col md:max-w-[1014px] mx-auto items-center justify-center mt-[60px] md:mt-[20px] w-[95%] md:w-full md:gap-[40px] gap-[30px]">
-        <div class="flex flex-col md:flex-row text-white gap-[20px] md:gap-[40px]">
-          <p class="text-[36px] font-[600] md:w-[40%] text-center md:text-justify">SPT PPN</p>
-          <p class="text-[17px] font-[400] text-center md:text-justify">Hitung dan Lapor SPT PPN sesuai dengan pemeriksaan faktur pajak penjualan dan pembelian</p>
-        </div>
-
-        <div class="flex flex-col md:flex-row md:gap-[30px] gap-[10px]">
-          <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[50%] gap-[20px]">
-            <div class="flex justify-start items-center">
-              <img src="assets/img/icon1.png" alt="" class="md:w-[20%]" />
-            </div>
-            <div>
-              <p class="text-[22px] font-[700] mb-[20px]">SPT PPn</p>
-              <p class="text-[#606060] text-justify">Hitung dan Laporkan Pajak Pertambahan Nilai bagi Wajib Pajak yang telah dikukuhkan sebagai Pengusaha Kena Pajak (PKP)</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-[20px] flex flex-col px-[40px] py-[35px] md:w-[50%] gap-[20px]">
-            <div class="flex justify-start items-center">
-              <img src="assets/img/icon1.png" alt="" class="md:w-[20%]" />
-            </div>
-            <div>
-              <p class="text-[22px] font-[700] mb-[20px]">Penerbitan eFaktur</p>
-              <p class="text-[#606060] text-justify">Faktur pajak PPN pada setiap transaksi Barang atau Jasa Kena Pajak</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Layanan3 Section End -->
 
     <!-- Hubungi Kami Section Start -->
-    <div class="flex flex-col md:max-w-[1014px] w-[95%] mb-[50px] md:mt-[50px] m-auto bg-[url('/assets/img/texture.png')] bg-cover bg-no-repeat text-white justify-center py-[40px] px-[20px] md:py-[90px] md:px-[120px] rounded-[20px]">
-      <p class="text-center text-[40px] font-[600]">Hubungi Kami <span class="text-[#FBA93E]">Sekarang</span></p>
-      <p class="text-[15px] text-center mb-[50px] mt-[20px]">Siap untuk mengoptimalkan laporan keuangan bisnismu? Hubungi kami hari ini untuk mendapatkan solusi perpajakan yang sesuai dengan kebutuhanmu.</p>
+    <div
+      class="flex flex-col md:max-w-[1014px] w-[95%] mb-[50px] md:my-[110px] my-[60px] m-auto bg-[url('/assets/img/texture.png')] bg-cover bg-no-repeat text-white justify-center py-[40px] px-[20px] md:py-[90px] md:px-[120px] rounded-[20px]"
+    >
+      <p class="text-center text-[40px] font-[600]">
+        Hubungi Kami <span class="text-[#FBA93E]">Sekarang</span>
+      </p>
+      <p class="text-[15px] text-center mb-[50px] mt-[20px]">
+        Siap untuk mengoptimalkan laporan keuangan bisnismu? Hubungi kami hari
+        ini untuk mendapatkan solusi perpajakan yang sesuai dengan kebutuhanmu.
+      </p>
       <div class="flex justify-center">
         <a
           href="https://wa.me/628879996667?text=Saya%20ingin%20konsultasi"
@@ -733,7 +1061,13 @@
           class="w-[200px] px-[30px] py-[20px] flex flex-row gap-[5px] bg-[#00D27F] rounded-[15px] text-white justify-center items-center text-center"
           style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+          >
             <path
               d="M2.5 22L3.91152 16.8691C3.04422 15.3639 2.58876 13.6568 2.59099 11.9196C2.58095 6.44549 7.02644 2 12.49 2C15.1417 2 17.6315 3.02806 19.5062 4.9034C20.4303 5.82266 21.1627 6.91616 21.6611 8.12054C22.1595 9.32492 22.4139 10.6162 22.4096 11.9196C22.4096 17.3832 17.9641 21.8287 12.5 21.8287C10.8368 21.8287 9.21374 21.4151 7.76204 20.6192L2.5 22ZM7.99424 18.8349L8.29675 19.0162C9.56649 19.7676 11.0146 20.1644 12.49 20.1654C17.0264 20.1654 20.7263 16.4662 20.7263 11.9291C20.7263 9.73176 19.8696 7.65554 18.3168 6.1034C17.5533 5.33553 16.6453 4.72636 15.6453 4.31101C14.6452 3.89565 13.5728 3.68232 12.49 3.68331C7.94343 3.6839 4.24476 7.38316 4.24476 11.9202C4.24476 13.4724 4.67843 14.995 5.50502 16.3055L5.69645 16.618L4.85982 19.662L7.99483 18.8354L7.99424 18.8349Z"
               fill="white"
@@ -833,10 +1167,34 @@
           <div style="flex: 1">
             <h3>Service</h3>
             <ul>
-              <li><a href="./akuntansi.html" class="text-white hover:text-gray-300">Akuntansi</a></li>
-              <li><a href="./perpajakan.html" class="text-white hover:text-gray-300">Perpajakan</a></li>
-              <li><a href="./analisis-bisnis.html" class="text-white hover:text-gray-300">Analisis Bisnis</a></li>
-              <li><a href="./pelatihan-akuntansi.html" class="text-white hover:text-gray-300">Pelatihan Sistem Akuntansi</a></li>
+              <li>
+                <a
+                  href="./akuntansi.html"
+                  class="text-white hover:text-gray-300"
+                  >Akuntansi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./perpajakan.html"
+                  class="text-white hover:text-gray-300"
+                  >Perpajakan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./analisis-bisnis.html"
+                  class="text-white hover:text-gray-300"
+                  >Analisis Bisnis</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pelatihan-akuntansi.html"
+                  class="text-white hover:text-gray-300"
+                  >Pelatihan Sistem Akuntansi</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -849,35 +1207,14 @@
     <!-- Akhir Footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <script src="./main.js" type="module"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-      const viewmore = document.getElementById("viewmore");
-      document.getElementById("buttonviewmore").onclick = () => {
-        view();
-      };
-      document.getElementById("buttonviewless").onclick = () => {
-        view2();
-      };
-      function view() {
-        document.getElementById("viewmore").classList.add("flex");
-        document.getElementById("viewmore").classList.remove("hidden");
-        document.getElementById("buttonviewless").classList.add("flex");
-        document.getElementById("buttonviewless").classList.remove("hidden");
-        document.getElementById("buttonviewmore").classList.add("hidden");
-      }
-      function view2() {
-        document.getElementById("viewmore").classList.add("hidden");
-        document.getElementById("viewmore").classList.remove("flex");
-        document.getElementById("buttonviewmore").classList.add("flex");
-        document.getElementById("buttonviewmore").classList.remove("hidden");
-        document.getElementById("buttonviewless").classList.add("hidden");
-      }
-    </script>
   </body>
 </html>
